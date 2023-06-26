@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 // import 'normalize.css';
+import './Components/base.scss';
 import './App.scss';
 // import './components.scss';
 import ErrorBoundary from "./Components/ErrorBoundary";
-import LoadingScreen from "./Components/LoadingScreen";
+// import LoadingScreen from "./Components/LoadingScreen";
 import SkipNav from "./Components/SkipNav";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
