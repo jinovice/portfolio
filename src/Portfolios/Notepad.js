@@ -24,7 +24,7 @@ export default function Notepad({pf}) {
           </div>
 
           <div className="gridCell img background c21">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}S1.jpg`} alt=""/>
+            <img src={`/images/portfolios/${pf.code}/${pf.code}S4.jpg`} alt=""/>
           </div>
 
           <div className="gridCell txt c21">
@@ -48,10 +48,10 @@ export default function Notepad({pf}) {
           </div>
 
           <div className="gridCell img background">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}S3.jpg`} alt=""/>
+            <img src={`/images/portfolios/${pf.code}/${pf.code}S1.jpg`} alt=""/>
           </div>
           <div className="gridCell img background">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}S4.jpg`} alt=""/>
+            <img src={`/images/portfolios/${pf.code}/${pf.code}S3.jpg`} alt=""/>
           </div>
 
           <div className="gridCell txt c21">

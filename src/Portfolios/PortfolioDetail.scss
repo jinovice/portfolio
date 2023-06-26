@@ -16,7 +16,7 @@
     letter-spacing: -0.06em;
     //font-size: var(--j-display-txt-large);
     //font-size: min(var(--j-display-txt-large), 130px);
-    font-size: min(var(--j-display-txt-large), 130px);
+    font-size: var(--j-display-txt-large);
     line-height: 0.9em;
     word-break: break-word;
   }
@@ -39,7 +39,7 @@
     li {
       //margin: 0.2em 0;
       padding: 0.6rem 1.8vw;
-      font-size: max(var(--j-display-txt-xxxsmall), 12px);;
+      font-size: max(var(--j-display-txt-xxxsmall), 12px);
       color: var(--j-color-neutral-black);
       line-height: 2em;
       //border-radius: 0.35rem;
@@ -106,8 +106,8 @@
 .portfolioContent {
   //grid-auto-rows: 250px;
   .displayTxt {
-    padding: 8vw 10vw;
-    font-size: var(--j-display-txt-xsmall);
+    padding: min(8vw, 70px) min(10vw, 100px);
+    font-size: var(--j-display-txt-xxsmall);
     line-height: 1.2em;
     letter-spacing: -0.05em;
     text-align: center;
@@ -117,13 +117,14 @@
     }
   }
   .txt {
-    padding: 0 10vw;
-    margin: 10vw 0;
+    padding: 0 min(10vw, 100px);
+    margin: min(10vw, 100px) 0;
     font-size: var(--j-txt-large);
     letter-spacing: -0.05em;
-    line-height: 1.2em;
-    text-align: left;
-    text-align: justify;
+    //line-height: 1.2em;
+    @media (min-width: 1024px) {
+      text-align: justify;
+    }
     & + .txt {
       //background-color: red;
       //padding-top: 0;
@@ -131,6 +132,7 @@
     }
     h2 {
       margin: 1em 0;
+      line-height: 1.2em;
     }
     &.dark{
       padding: 8vw 10vw;
@@ -139,7 +141,7 @@
       background-color: var(--j-color-neutral-darker);
     }
     &.gray{
-      padding: 8vw 10vw;
+      padding: min(8vw, 70px) min(10vw, 100px);
       margin: 0;
       background-color: var(--j-color-neutral-lighter);
     }

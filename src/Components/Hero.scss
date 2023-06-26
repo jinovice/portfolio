@@ -1,5 +1,5 @@
 #hero {
-  //position: relative;
+  position: relative;
   //width: 100%;
   //height: 100vh;
   //padding-top:3em;
@@ -9,15 +9,40 @@
   perspective: 1800px;
   overflow: hidden;
 
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: auto;
+    left: 50%;
+    bottom: 2em;
+    width: 30px;
+    height: 30px;
+    border-right: 1px #333 solid;
+    border-bottom: 1px #333 solid;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
   .heroAnimation{
     z-index: 100;
     position: relative;
     height:550px;
     width: 750px;
+
+    @media (max-width: 734px) {
+      zoom: 0.6;
+    }
+    @media (max-width: 500px) {
+      zoom: 0.4;
+    }
+  }
+
+  .depth1, .depth2, .depth3 {
+    //transition: transform 0.1s ease-in-out;
   }
 
   .itsMe {
-    zoom: 1;
+    //zoom: 1;
     z-index: 100;
     left:46%;
     top: calc(46%);
@@ -26,21 +51,13 @@
     max-width: 100%;
     max-height: 100%;
 
-    &>div {
+    & div {
       position:absolute;
-
-      &>div {
-        position:absolute;
-        //translate: -50% -50%;
-        //transform-origin: 50% 50%;
-
-      }
-
+      translate: -50% -50%;
     }
 
     & img, & svg {
-      position:absolute;
-      translate: -50% -50%;
+      //position:absolute;
       -webkit-user-drag: none;
     }
 
@@ -147,7 +164,7 @@
       font-size:3em;
       line-height: 1.2em;
       letter-spacing: -0.05em;
-      margin:0.1em auto;
+      margin:0.3em auto;
     }
     p {
       margin: 0 auto;
@@ -157,6 +174,7 @@
       line-height: 1.2em;
     }
     .tags{
+      margin-top: 1em;
       max-width:500px;
       justify-content: center;
     }

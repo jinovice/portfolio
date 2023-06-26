@@ -15,7 +15,7 @@
 }
 .portfolioDetailHeader h1 {
   letter-spacing: -0.06em;
-  font-size: min(var(--j-display-txt-large), 130px);
+  font-size: var(--j-display-txt-large);
   line-height: 0.9em;
   word-break: break-word;
 }
@@ -82,8 +82,8 @@
 }
 
 .portfolioContent .displayTxt {
-  padding: 8vw 10vw;
-  font-size: var(--j-display-txt-xsmall);
+  padding: min(8vw, 70px) min(10vw, 100px);
+  font-size: var(--j-display-txt-xxsmall);
   line-height: 1.2em;
   letter-spacing: -0.05em;
   text-align: center;
@@ -93,19 +93,22 @@
   background-color: var(--j-color-neutral-black);
 }
 .portfolioContent .txt {
-  padding: 0 10vw;
-  margin: 10vw 0;
+  padding: 0 min(10vw, 100px);
+  margin: min(10vw, 100px) 0;
   font-size: var(--j-txt-large);
   letter-spacing: -0.05em;
-  line-height: 1.2em;
-  text-align: left;
-  text-align: justify;
+}
+@media (min-width: 1024px) {
+  .portfolioContent .txt {
+    text-align: justify;
+  }
 }
 .portfolioContent .txt + .txt {
   margin-top: 0;
 }
 .portfolioContent .txt h2 {
   margin: 1em 0;
+  line-height: 1.2em;
 }
 .portfolioContent .txt.dark {
   padding: 8vw 10vw;
@@ -114,7 +117,7 @@
   background-color: var(--j-color-neutral-darker);
 }
 .portfolioContent .txt.gray {
-  padding: 8vw 10vw;
+  padding: min(8vw, 70px) min(10vw, 100px);
   margin: 0;
   background-color: var(--j-color-neutral-lighter);
 }

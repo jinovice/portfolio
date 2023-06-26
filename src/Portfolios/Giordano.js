@@ -13,15 +13,15 @@ export default function Giordano({pf}) {
             <p className="comment">{pf.description}</p>
           </div>
 
-          <div className="gridCell img background c21">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}1.jpg`} alt=""/>
-          </div>
-
           <div className="gridCell txt c21">
             <h2>Introduction</h2>
             <p>
               During the project, I was involved in the UI/UX design for the admin pages of two brand e-commerce websites: Giordano, BSX, and Concepts One. The objective was to create a user-friendly and intuitive interface that effectively catered to the needs of administrators managing various aspects of the online stores. Here's a step-by-step overview of the process:
             </p>
+          </div>
+
+          <div className="gridCell img background c21">
+            <img src={`/images/portfolios/${pf.code}/${pf.code}1.jpg`} alt=""/>
           </div>
 
           <div className="gridCell txt c21">

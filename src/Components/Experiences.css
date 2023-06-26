@@ -1,9 +1,10 @@
 #experience {
+  padding: 10em 0;
   background-color: var(--j-color-neutral-white);
 }
 #experience .career {
   max-width: var(--j-width-content-basic);
-  margin: 0 auto;
+  margin: 7em auto 0 auto;
 }
 #experience .career dl {
   display: grid;
@@ -11,25 +12,27 @@
   grid-template-columns: 284px auto;
 }
 #experience .career dl dt {
-  padding: 0.5rem 0;
+  padding: 0;
   text-align: right;
+  border-right: solid 1px var(--j-color-neutral-black-5);
 }
 #experience .career dl dt .eff {
-  padding: 0 2.5rem;
-  border-right: solid 1px var(--j-color-neutral-black);
+  padding: 0 1.5rem;
 }
 #experience .career dl dt .company {
+  margin-bottom: 0.3em;
   font-size: var(--j-txt-xlarge);
   font-weight: bold;
 }
 #experience .career dl dt .when {
   font-size: var(--j-txt-xsmall);
+  color: var(--j-color-neutral-black-5);
 }
 #experience .career dl dd {
-  padding: 0.5rem 1.5rem;
+  padding: 0 2.5rem;
 }
 #experience .career dl dd .description {
-  font-size: var(--j-txt-normal);
+  font-size: var(--j-txt-large);
 }
 #experience .career dl dd ._group {
   margin: 1rem 0;
@@ -41,11 +44,11 @@
 #experience .career dl dd .works {
   list-style-type: disc;
   padding-inline-start: 1.2rem;
-  font-size: var(--j-txt-small);
 }
 #experience .career dl dd .works li {
   margin: 0.8rem 0;
   font-size: var(--j-txt-normal);
+  font-weight: lighter;
 }
 #experience ul.tags {
   margin: 0 auto;
@@ -79,17 +82,19 @@
 }
 @media (max-width: 768px) {
   #experience .career dl {
+    padding: 0 2em;
     display: block;
   }
   #experience .career dl dt {
     padding: 0;
     margin-top: 5em;
     text-align: left;
+    border: none;
+    border-bottom: solid 1px var(--j-color-neutral-black-5);
   }
   #experience .career dl dt .eff {
     padding: 0;
     border-right: none;
-    border-bottom: solid 1px var(--j-color-neutral-black);
   }
   #experience .career dl dt .eff .company {
     font-size: var(--j-txt-xxlarge);
@@ -106,7 +111,6 @@
   #experience .career dl dd .works {
     background-color: var(--j-color-neutral-lighter);
     padding: 1em 3em;
-    font-size: var(--j-txt-xsmall);
   }
 }
 

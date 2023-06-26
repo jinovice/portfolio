@@ -15,9 +15,9 @@ function Portfolios() {
           <dt>
             <div className="eff">
               <h3 className="company">Freelancer</h3>
-              <div className="role">UI/UX Designer</div>
-              <div className="role">Web Publisher</div>
-              <div className="role">Graphic Designer</div>
+              {/*<div className="role">UI/UX Designer</div>*/}
+              <div className="role">Front-end developer</div>
+              <div className="role">Graphic designer</div>
               <div className="when">2017 - 2021</div>
             </div>
           </dt>
@@ -27,16 +27,16 @@ function Portfolios() {
             </div>
             <div className="_group">
               <ul className="tags roles dark">
-                <li>UI/UX</li>
                 <li>FRONT-END</li>
                 <li>GRAPHIC</li>
-                <li>PRODUCT</li>
               </ul>
               <ul className="tags tools">
-                <li>PHOTOSHOP</li>
-                <li>FIGMA</li>
                 <li>HTML/CSS</li>
+                <li>JS</li>
+                <li>REACT</li>
+                <li>PHOTOSHOP</li>
                 <li>ILLUSTRATOR</li>
+                <li>FIGMA</li>
               </ul>
             </div>
             <ul className="works">

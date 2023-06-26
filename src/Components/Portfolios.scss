@@ -1,13 +1,18 @@
 #portfolios {
+  padding: 10em 0;
   background-image: url("../../public/images/portfolios/bg.jpg");
   background-size: cover;
-  background-blend-mode: multiply;
+  //background-blend-mode: multiply;
 
   background-color: var(--j-color-background-portfolios);
   //transform: rotate3d(0, 0, 3, 45deg) ;
   .sectionHeader {
     color: var(--j-color-neutral-white);
     //color:white;
+  }
+
+  @media (max-width: 734px) {
+    padding-bottom: 0.5em;
   }
 }
 
@@ -168,7 +173,7 @@
         li {
           //margin: 0.2em 0;
           padding: 0.2rem 0.5rem;
-          font-size: var(--j-txt-xsmall);
+          font-size: var(--j-txt-small);
           color: var(--j-color-neutral-black);
           line-height: 1.2em;
           //border-radius: 0.35rem;
@@ -559,7 +564,7 @@
   &:hover {
     //transform: translate(-1px, -3px);
     //box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
-    filter: saturate(1);
+    //filter: saturate(1);
 
     .buttons {
       //button.viewDetails {
@@ -638,6 +643,7 @@
     padding:0;
     //grid-auto-flow: row;
     //grid-auto-flow: column;
+    gap: 0.5em;
     grid-template-columns: repeat(1, 1fr);
     .portfolio .content .title {
       //font-size: var(--j-txt-xlarge);

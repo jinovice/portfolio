@@ -1,9 +1,10 @@
 #experience {
+  padding: 10em 0;
   background-color: var(--j-color-neutral-white);
 
   .career {
     max-width: var(--j-width-content-basic);
-    margin: 0 auto;
+    margin: 7em auto 0 auto;
     dl {
       display: grid;
       gap: 7em 2em;
@@ -12,24 +13,29 @@
         //display: flex;
         //flex-direction: column;
         //gap: 0.25rem auto;
-        padding: 0.5rem 0;
+        padding: 0;
         text-align: right;
+        border-right: solid 1px var(--j-color-neutral-black-5);
         .eff {
-          padding: 0 2.5rem;
-          border-right: solid 1px var(--j-color-neutral-black);
+          padding: 0 1.5rem;
         }
         .company {
+          margin-bottom: 0.3em;
           font-size:var(--j-txt-xlarge);
           font-weight: bold;
         }
+        .role {
+          //font-size:var(--j-txt-small);
+        }
         .when {
           font-size: var(--j-txt-xsmall);
+          color:var(--j-color-neutral-black-5)
         }
       }
       dd {
-        padding: 0.5rem 1.5rem;
+        padding: 0 2.5rem;
         .description{
-          font-size:var(--j-txt-normal);
+          font-size:var(--j-txt-large);
         }
         ._group{
           margin: 1rem 0;
@@ -41,10 +47,11 @@
         .works {
           list-style-type: disc;
           padding-inline-start: 1.2rem;
-          font-size:var(--j-txt-small);
+          //font-size:var(--j-txt-small);
           li{
             margin:0.8rem 0;
             font-size:var(--j-txt-normal);
+            font-weight: lighter;
           }
         }
       }
@@ -92,6 +99,7 @@
   @media (max-width: 768px) {
     .career {
       dl {
+        padding: 0 2em;
         display: block;
         //grid-template-columns: 100%;
 
@@ -99,11 +107,12 @@
           padding: 0;
           margin-top: 5em;
           text-align: left;
+          border: none;
+          border-bottom: solid 1px var(--j-color-neutral-black-5);
 
           .eff {
             padding: 0;
             border-right: none;
-            border-bottom: solid 1px var(--j-color-neutral-black);
 
             .company {
               font-size:var(--j-txt-xxlarge);
@@ -128,7 +137,7 @@
           .works {
             background-color: var(--j-color-neutral-lighter);
             padding: 1em 3em;
-            font-size: var(--j-txt-xsmall);
+            //font-size: var(--j-txt-xsmall);
           }
         }
       }

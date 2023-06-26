@@ -13,6 +13,8 @@
   --j-color-neutral-gray:#999;
   --j-color-neutral-white:#fff;
   --j-color-neutral-white-5:rgba(255,255,255,0.5);
+  --j-color-neutral-white-9:rgba(255,255,255,0.9);
+  --j-color-neutral-black-9:rgba(0,0,0,0.9);
   --j-color-neutral-black-5:rgba(0,0,0,0.5);
   --j-color-neutral-black-1:rgba(0,0,0,0.1);
 
@@ -21,12 +23,12 @@
   --j-header-height:50px;
   --j-logo-txt:1.2rem;
   --j-display-txt-xlarge:12vw;
-  --j-display-txt-large:10vw;
-  --j-display-txt:7vw;
-  --j-display-txt-small:4vw;
-  --j-display-txt-xsmall:3vw;
-  --j-display-txt-xxsmall:1.5vw;
-  --j-display-txt-xxxsmall:1.2vw;
+  --j-display-txt-large:min(10vw, 130px);
+  --j-display-txt:min(7vw, 60px);
+  --j-display-txt-small:min(6vw, 48px);
+  --j-display-txt-xsmall:min(5vw, 36px);
+  --j-display-txt-xxsmall:min(4vw, 24px);
+  --j-display-txt-xxxsmall:min(3vw, 18px);
   --j-display-txt-tiny:1.0vw;
   --j-layout-maxW:900px;
   --j-txt-xxxlarge:2.625em;
@@ -70,7 +72,7 @@ html {
   }
 
   @media (max-width: 734px) {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
@@ -154,7 +156,7 @@ code {
 }
 
 .sectionHeader {
-  padding:10rem 30px 0 30px;
+  padding:0 30px;
   //padding: 0 1rem;
   max-width: var(--j-width-content-basic);
   margin:0 auto 4rem auto;

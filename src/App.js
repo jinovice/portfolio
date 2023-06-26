@@ -19,8 +19,8 @@ function App() {
   const [pfs, setPfs] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
 
-  // const [activePf, setActivePf] = useState(undefined);
-  const [activePf, setActivePf] = useState(71);
+  const [activePf, setActivePf] = useState(undefined);
+  // const [activePf, setActivePf] = useState(71);
   console.log(activePf);
   const updateActivePf = (id, clientX, clientY) => {
     // console.log(activePf + "  updateActivePf S " + id, clientX, clientY);
@@ -94,7 +94,7 @@ function App() {
 
     const handleScrollAnimation = () => {
       // console.log((window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop), (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)>20);
-      setIsSticky(()=>(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)>80)
+      setIsSticky(()=>(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)>160)
       scrollElements.forEach((el) => {
         if (elementInView(el, 1.15)) {
           displayScrollElement(el);
@@ -105,7 +105,7 @@ function App() {
     }
 
     window.addEventListener("scroll", () => {
-      // handleScrollAnimation();
+      handleScrollAnimation();
       // console.log('scrolling');
     });
 

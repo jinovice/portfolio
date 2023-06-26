@@ -1,6 +1,20 @@
 #hero {
+  position: relative;
   perspective: 1800px;
   overflow: hidden;
+}
+#hero:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: auto;
+  left: 50%;
+  bottom: 2em;
+  width: 30px;
+  height: 30px;
+  border-right: 1px #333 solid;
+  border-bottom: 1px #333 solid;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 #hero .heroAnimation {
   z-index: 100;
@@ -8,8 +22,17 @@
   height: 550px;
   width: 750px;
 }
+@media (max-width: 734px) {
+  #hero .heroAnimation {
+    zoom: 0.6;
+  }
+}
+@media (max-width: 500px) {
+  #hero .heroAnimation {
+    zoom: 0.4;
+  }
+}
 #hero .itsMe {
-  zoom: 1;
   z-index: 100;
   left: 46%;
   top: 46%;
@@ -18,15 +41,11 @@
   max-width: 100%;
   max-height: 100%;
 }
-#hero .itsMe > div {
-  position: absolute;
-}
-#hero .itsMe > div > div {
-  position: absolute;
-}
-#hero .itsMe img, #hero .itsMe svg {
+#hero .itsMe div {
   position: absolute;
   translate: -50% -50%;
+}
+#hero .itsMe img, #hero .itsMe svg {
   -webkit-user-drag: none;
 }
 #hero .itsMe .myFace {
@@ -123,7 +142,7 @@
   font-size: 3em;
   line-height: 1.2em;
   letter-spacing: -0.05em;
-  margin: 0.1em auto;
+  margin: 0.3em auto;
 }
 #hero .intro p {
   margin: 0 auto;
@@ -133,6 +152,7 @@
   line-height: 1.2em;
 }
 #hero .intro .tags {
+  margin-top: 1em;
   max-width: 500px;
   justify-content: center;
 }

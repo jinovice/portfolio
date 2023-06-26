@@ -109,15 +109,13 @@ function Hero() {
             <h1 className="line-1 anim-typewriter">Hi, I am Jinyong Choi.</h1>
             {/*<h1 className="line-1 anim-typewriter">HI, i AM JINYONG CHOI.</h1>*/}
             <p>
-              A highly skilled UI/UX designer<br />with 10 years of experience.
-              With over 10 years of experience in various IT industries, I have worked as a UI/UX designer for 2 years, a graphic designer for 4 years, and a web publisher for 4 years. As a detail-oriented professional, I have specialized in HTML, CSS, and JavaScript, and I am an expert in WCAG compliance. I take great pride in crafting effective and efficient code, and I have extensive experience collaborating with government and major corporate clients. I prioritize adherence to standards, security, and meeting stakeholders' requirements.
+              A highly skilled Front-End Developer<br />with over 10 years of experience in various IT industries. From graphic design to UI/UX design.
             </p>
             <ul className="tags">
-              <li>UI/UX DESIGN</li>
               <li>FRONT-END DEVELOPMENT</li>
               <li>GRAPHIC DESIGN</li>
-              <li>RESPONSIBLE DESIGN</li>
-              <li>ACCESIBILITY</li>
+              <li>WCAG</li>
+              <li>UI/UX DESIGN</li>
             </ul>
           </div>
           {/*<script src="../src/index.js"></script>*/}
