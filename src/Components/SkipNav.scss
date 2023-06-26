@@ -1,0 +1,22 @@
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height:0;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.skip-link a {
+  position: relative;
+  top: -40px;
+  padding: 0.5em;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  background-color: white;
+}
+
+.skip-link a:focus {
+  top: 0;
+}

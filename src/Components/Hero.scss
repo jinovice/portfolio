@@ -1,0 +1,205 @@
+#hero {
+  //position: relative;
+  //width: 100%;
+  //height: 100vh;
+  //padding-top:3em;
+  //height: 100vh;
+  //min-width: 900px;
+  //min-height: 1200px;
+  perspective: 1800px;
+  overflow: hidden;
+
+  .heroAnimation{
+    z-index: 100;
+    position: relative;
+    height:550px;
+    width: 750px;
+  }
+
+  .itsMe {
+    zoom: 1;
+    z-index: 100;
+    left:46%;
+    top: calc(46%);
+    position: absolute;
+    transform-style: preserve-3d;
+    max-width: 100%;
+    max-height: 100%;
+
+    &>div {
+      position:absolute;
+
+      &>div {
+        position:absolute;
+        //translate: -50% -50%;
+        //transform-origin: 50% 50%;
+
+      }
+
+    }
+
+    & img, & svg {
+      position:absolute;
+      translate: -50% -50%;
+      -webkit-user-drag: none;
+    }
+
+    .myFace {
+      z-index: 30;
+      transform: translateZ(5px);
+      .head {
+        z-index: 312;
+        top:0;
+      }
+      .ex {
+        z-index: 32;
+        left: 30px;
+        top: 40px;
+      }
+    }
+
+    .myBody {
+      z-index: 20;
+      left:30px;
+      top: 17px;
+      transform: translateZ(-2px);
+      perspective: 500px;
+      //transform-style: flat;
+      .eff {
+        z-index: 22;
+        left:30px;
+        top:170px;
+      }
+      .back {
+        z-index: 21;
+        left:30px;
+        top:170px;
+        //&>img {
+        //  filter: blur(3px);
+        //}
+      }
+    }
+
+    .myBg {
+      z-index: 10;
+      position: absolute;
+      translate: -50% -50%;
+      transform: translateZ(-4px);
+      perspective: 1000px;
+      .bg4{
+        filter: blur(1px);
+        opacity: 0.3;
+      }
+    }
+
+  }
+
+  ul.tags {
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    column-gap: 0.2em;
+    li {
+      margin: 0.2em 0;
+      padding:0.2rem 0.5rem;
+      font-size:var(--j-txt-small);
+      color:var(--j-color-neutral-black);
+      line-height: 1.2em;
+      border-radius: 0.35rem;
+      border: solid 1px rgba(0,0,0,0.7);
+      background-color:white;
+    }
+    &.dark{
+      li{
+        color:white;
+        background-color:var(--j-color-neutral-black);
+      }
+    }
+    &.colored{
+      li{
+        color:white;
+        border: solid 1px var(--j-color-primary-dark);
+        background-color:var(--j-color-primary-dark);
+      }
+    }
+    &.small{
+      li{
+        font-size:var(--j-txt-xxsmall);
+      }
+    }
+  }
+
+  .intro {
+    z-index: 100;
+    position: relative;
+    padding: 0 1rem;
+    //z-index: 100;
+    //position: absolute;
+    //left: 0;
+    //bottom: 6em;
+    //width: 100%;
+    text-align:center;
+    //display:flex;
+    //flex-direction: column;
+    h1{
+      font-size:3em;
+      line-height: 1.2em;
+      letter-spacing: -0.05em;
+      margin:0.1em auto;
+    }
+    p {
+      margin: 0 auto;
+      max-width: 20em;
+      font-size: 1.8em;
+      letter-spacing: -0.07em;
+      line-height: 1.2em;
+    }
+    .tags{
+      max-width:500px;
+      justify-content: center;
+    }
+/*    &:after {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      margin-left:-0.75em;
+      position: absolute;
+      left:50%;
+      bottom: -4em;
+      border-bottom:solid 1px black;
+      border-right:solid 1px black;
+      transform: rotate(45deg);
+      display: block;
+    }*/
+  }
+
+  //.line-1{
+  //  position: relative;
+  //  top: 50%;
+  //  width: 24em;
+  //  margin: 0 auto;
+  //  border-right: 4px solid rgba(255,255,255,.75);
+  //  font-size: 180%;
+  //  text-align: center;
+  //  white-space: nowrap;
+  //  overflow: hidden;
+  //  transform: translateY(-50%);
+  //}
+
+  ///* Animation */
+  //.anim-typewriter{
+  //  animation: typewriter 2s steps(25) 1s 1 normal both,
+  //  blinkTextCursor 500ms steps(44) infinite normal;
+  //}
+  //@keyframes typewriter{
+  //  from{width: 0;}
+  //  to{width: 11em;}
+  //}
+  //@keyframes blinkTextCursor{
+  //  from{border-right-color: rgba(0,0,0,.95);}
+  //  to{border-right-color: transparent;}
+  //}
+
+}
