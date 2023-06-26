@@ -133,14 +133,14 @@ function App() {
     <ErrorBoundary>
       <div className={`${isTouchDevice ? "touch-device" : ""} container`}>
         {/*<LoadingScreen isLoading={!pfs} />*/}
-        {/*<div className={`loading ${pfs ? "loaded" : ""}`}><p>Loading...</p></div>*/}
-        {/*<SkipNav/>*/}
-        {/*<Header isSticky={isSticky} />*/}
-        {/*<Hero/>*/}
+        <div className={`loading ${pfs ? "loaded" : ""}`}><p>Loading...</p></div>
+        <SkipNav/>
+        <Header isSticky={isSticky} />
+        <Hero/>
         <Portfolios pfs={pfs} setActivePf={setActivePf}/>
-        {/*<Experiences/>*/}
-        {/*<About/>*/}
-        {/*<Footer/>*/}
+        <Experiences/>
+        <About/>
+        <Footer/>
         <Dialog pfs={pfs} activePf={activePf} setActivePf={setActivePf} screenWH={screenWH} isTouchDevice={isTouchDevice} />
       </div>
     </ErrorBoundary>
