@@ -48,7 +48,6 @@
 #experience .career dl dd .works li {
   margin: 0.8rem 0;
   font-size: var(--j-txt-normal);
-  font-weight: lighter;
 }
 #experience ul.tags {
   margin: 0 auto;

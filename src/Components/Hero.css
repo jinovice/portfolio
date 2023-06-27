@@ -1,5 +1,11 @@
 #hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  padding: 10vh 0;
+  width: 100%;
+  min-height: 100vh;
   perspective: 1800px;
   overflow: hidden;
 }
@@ -9,9 +15,9 @@
   position: absolute;
   top: auto;
   left: 50%;
-  bottom: 2em;
-  width: 30px;
-  height: 30px;
+  bottom: 2vh;
+  width: min(4vh, 30px);
+  height: min(4vh, 30px);
   border-right: 1px #333 solid;
   border-bottom: 1px #333 solid;
   transform: translate(-50%, -50%) rotate(45deg);
@@ -21,13 +27,25 @@
   position: relative;
   height: 550px;
   width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 @media (max-width: 734px) {
   #hero .heroAnimation {
     zoom: 0.6;
   }
 }
+@media (max-height: 1024px) {
+  #hero .heroAnimation {
+    zoom: 0.6;
+  }
+}
 @media (max-width: 500px) {
+  #hero .heroAnimation {
+    zoom: 0.4;
+  }
+}
+@media (max-height: 768px) {
   #hero .heroAnimation {
     zoom: 0.4;
   }

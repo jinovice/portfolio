@@ -104,7 +104,7 @@
       //background-color: var(--j-color-neutral-black-1);
       border:solid 1px var(--j-color-neutral-black);
       border-radius: 0.3em;
-      letter-spacing: -0.05em;
+      //letter-spacing: -0.05em;
       //color:var(--j-color-neutral-white);
       font-size: var(--j-txt-xsmall);
       display: inline-block;
@@ -243,7 +243,7 @@
     opacity: 0.3;
     rotate: 45deg;
     transition: all cubic-bezier(.7, 0, .3, 1) 0.7s 0.5s;
-    pointer-events: none;
+    //pointer-events: none;
   }
 
   &.darkColor {
@@ -288,6 +288,9 @@
     .viewDetailIcon {
       opacity: 1;
       rotate: -45deg;
+      path {
+        transition: all cubic-bezier(.7, 0, .3, 1) 0.7s 0.05s;
+      }
     }
   }
 
@@ -382,13 +385,7 @@
         right: 1.5em;
         bottom: 5em;
         rotate: -45deg;
-        color: var(--j-color-neutral-white);
-      }
-
-      .viewDetailIcon {
-        path {
-          transition: all cubic-bezier(.7, 0, .3, 1) 0.7s 0.05s;
-        }
+        //color: var(--j-color-neutral-white);
       }
 
       &:hover {

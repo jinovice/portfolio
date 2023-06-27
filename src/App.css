@@ -3,6 +3,23 @@
   min-width: 340px;
 }
 
+.loading {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: visibility 0.3s, opacity;
+  opacity: 1;
+  visibility: visible;
+}
+.loading.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
 body {
   position: relative;
   background-color: var(--j-color-background-body);
@@ -11,11 +28,6 @@ body {
   font-family: -apple-system, "Inter", sans, serif, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
 }
-body.popuped {
-  overflow: hidden;
-  padding-right: 17px;
-}
-
 .scroll-event {
   width: 100%;
   height: 100%;
@@ -35,10 +47,6 @@ body.popuped {
   flex-direction: row-reverse;
 }
 
-.scroll-element {
-  height: 100%;
-}
-
 .scroll-caption {
   margin: 1rem;
 }
@@ -48,13 +56,6 @@ body.popuped {
   .scroll-container:nth-of-type(even) {
     flex-direction: column;
     align-content: inherit;
-  }
-  .scroll-element {
-    height: 100%;
-  }
-  .scroll-element,
-  .scroll-caption {
-    width: 100%;
   }
 }
 /**Styling scrollable elements*/
@@ -128,35 +129,6 @@ body.popuped {
     scale: 1;
     opacity: 1;
   }
-}
-.loading {
-  z-index: 9999;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: visibility 0.3s, opacity;
-  opacity: 1;
-  visibility: visible;
-}
-.loading.loaded {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#about ._group {
-  font-size: var(--j-txt-small);
-}
-
-footer {
-  padding: 4rem 10%;
-  background-color: #eeeeee;
-}
-footer div {
-  font-size: var(--j-txt-xsmall);
-  text-align: center;
 }
 
 /*# sourceMappingURL=App.css.map */

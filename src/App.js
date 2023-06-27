@@ -20,7 +20,7 @@ function App() {
   const [isSticky, setIsSticky] = useState(false);
 
   const [activePf, setActivePf] = useState(undefined);
-  // const [activePf, setActivePf] = useState(71);
+  // const [activePf, setActivePf] = useState(53);
   console.log(activePf);
   const updateActivePf = (id, clientX, clientY) => {
     // console.log(activePf + "  updateActivePf S " + id, clientX, clientY);
@@ -133,7 +133,6 @@ function App() {
     <ErrorBoundary>
       <div className={`${isTouchDevice ? "touch-device" : ""} container`}>
         {/*<LoadingScreen isLoading={!pfs} />*/}
-        <div className={`loading ${pfs ? "loaded" : ""}`}><p>Loading...</p></div>
         <SkipNav/>
         <Header isSticky={isSticky} />
         <Hero/>

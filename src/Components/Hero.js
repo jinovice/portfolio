@@ -80,10 +80,10 @@ function Hero() {
   }, [mousePosition]);
 
   return (
-      <section id="hero" className="fullScreen" ref={eventAreaRef}>
+      <section id="hero" ref={eventAreaRef}>
         {console.log('hero Rendered')}
 
-        <div className="sectionContent fullScreenCenter">
+        <div className="display">
 
           <div className="heroAnimation">
             <div className="itsMe depth1">
@@ -102,14 +102,13 @@ function Hero() {
                 {/*<div className="bg4 depth5"><img src="images/hero/bg4.svg" alt=""/></div>*/}
               </div>
             </div>
-            {/*<div className="heroBg"></div>*/}
           </div>
 
           <div className="intro font-bold">
             <h1 className="line-1 anim-typewriter">Hi, I am Jinyong Choi.</h1>
             {/*<h1 className="line-1 anim-typewriter">HI, i AM JINYONG CHOI.</h1>*/}
             <p>
-              A highly skilled Front-End Developer<br />with over 10 years of experience in various IT industries. From graphic design to UI/UX design.
+              Web Development Journey<br />Jino's Portfolio
             </p>
             <ul className="tags">
               <li>FRONT-END DEVELOPMENT</li>
@@ -118,9 +117,6 @@ function Hero() {
               <li>UI/UX DESIGN</li>
             </ul>
           </div>
-          {/*<script src="../src/index.js"></script>*/}
-
-          {/*{console.log('rendered')}*/}
 
         </div>
       </section>
