@@ -45,7 +45,6 @@ header .headerContainer h1 img {
 }
 header .headerContainer h1 span {
   display: inline-block;
-  margin-left: 1em;
   padding: 0.2em 0.5em;
   font-size: 12px;
   font-weight: normal;

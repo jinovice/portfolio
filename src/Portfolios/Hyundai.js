@@ -9,7 +9,7 @@ export default function Hyundai({pf}) {
       {pf && (
         <div className="portfolioContent gridContainer c2">
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}1.jpg`} alt=""/>
           </div>
 
@@ -24,7 +24,7 @@ export default function Hyundai({pf}) {
             <p className="comment">{pf.description}</p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}2.jpg`} alt=""/>
           </div>
 
@@ -37,7 +37,7 @@ export default function Hyundai({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}3.jpg`} alt=""/>
           </div>
 
@@ -50,7 +50,7 @@ export default function Hyundai({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}4.jpg`} alt=""/>
           </div>
 
@@ -63,7 +63,7 @@ export default function Hyundai({pf}) {
             </p>
           </div>
 
-          {/*<div className="gridCell img background c21">*/}
+          {/*<div className="gridCell imgCenter screenshot c21">*/}
           {/*  <img src={`/images/portfolios/${pf.code}/${pf.code}5.jpg`} alt=""/>*/}
           {/*</div>*/}
 
@@ -76,7 +76,7 @@ export default function Hyundai({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}6.jpg`} alt=""/>
           </div>
 

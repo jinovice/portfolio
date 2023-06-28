@@ -23,7 +23,7 @@ export default function Notepad({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S4.jpg`} alt=""/>
           </div>
 
@@ -36,7 +36,7 @@ export default function Notepad({pf}) {
               development process.
             </p>
           </div>
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S2.jpg`} alt=""/>
           </div>
 
@@ -47,10 +47,10 @@ export default function Notepad({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S1.jpg`} alt=""/>
           </div>
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S3.jpg`} alt=""/>
           </div>
 
@@ -69,10 +69,10 @@ export default function Notepad({pf}) {
           {/*  <img src={`/images/portfolios/${pf.code}/${pf.code}S5.jpg`} alt=""/>*/}
           {/*</div>*/}
 
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}1.jpg`} alt=""/>
           </div>
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}2.jpg`} alt=""/>
           </div>
 
@@ -88,11 +88,11 @@ export default function Notepad({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}3.jpg`} alt=""/>
           </div>
 
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}4.jpg`} alt=""/>
           </div>
 
@@ -108,10 +108,10 @@ export default function Notepad({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}5.jpg`} alt=""/>
           </div>
-          <div className="gridCell img background">
+          <div className="gridCell imgCenter screenshot">
             <img src={`/images/portfolios/${pf.code}/${pf.code}6.jpg`} alt=""/>
           </div>
 
@@ -131,9 +131,9 @@ export default function Notepad({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}7.jpg`} alt=""/>
-          </div>
+          {/*<div className="gridCell img background c21">*/}
+          {/*  <img src={`/images/portfolios/${pf.code}/${pf.code}7.jpg`} alt=""/>*/}
+          {/*</div>*/}
 
         </div>
       )}

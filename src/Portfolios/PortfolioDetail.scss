@@ -165,7 +165,7 @@
       }
     }
     &.screenshot {
-      padding: 50px;
+      padding: min(4vw, 50px);
       background-color: var(--j-color-neutral-lighter);
     }
     &.img3 {

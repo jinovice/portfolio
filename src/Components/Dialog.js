@@ -71,7 +71,7 @@ function Dialog({pfs, activePf, setActivePf, isTouchDevice}) {
       setPortfolio(null);
     };
 
-  });
+  }, [activePf]);
 
   return (
     <div className="popup" ref={popupRef}>
@@ -98,7 +98,7 @@ function Dialog({pfs, activePf, setActivePf, isTouchDevice}) {
                 </ul>
               </div>
 
-              {!Portfolio ? <p>Loading......</p> : <Portfolio pf={pf} />}
+              {/*{!Portfolio ? <p>Loading......</p> : <Portfolio pf={pf} />}*/}
 
             </div>
           )};

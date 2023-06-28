@@ -145,7 +145,7 @@
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 .portfolioContent .gridCell.imgCenter.screenshot {
-  padding: 50px;
+  padding: min(4vw, 50px);
   background-color: var(--j-color-neutral-lighter);
 }
 .portfolioContent .gridCell.imgCenter.img3 {

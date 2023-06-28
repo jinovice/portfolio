@@ -9,7 +9,7 @@ export default function Daekyo({pf}) {
       {pf && (
         <div className="portfolioContent gridContainer c2">
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S1.jpg`} alt=""/>
           </div>
 
@@ -17,7 +17,7 @@ export default function Daekyo({pf}) {
             <p className="comment">{pf.description}</p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S2.jpg`} alt=""/>
           </div>
 
@@ -28,7 +28,7 @@ export default function Daekyo({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S3.jpg`} alt=""/>
           </div>
 
@@ -50,7 +50,7 @@ export default function Daekyo({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S4.jpg`} alt=""/>
           </div>
 
@@ -72,7 +72,7 @@ export default function Daekyo({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}S5.jpg`} alt=""/>
           </div>
 
@@ -95,7 +95,7 @@ export default function Daekyo({pf}) {
           </div>
 
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}1.jpg`} alt=""/>
           </div>
 
@@ -108,7 +108,7 @@ export default function Daekyo({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}2.jpg`} alt=""/>
           </div>
 

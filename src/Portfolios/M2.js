@@ -9,7 +9,7 @@ export default function M2({pf}) {
       {pf && (
         <div className="portfolioContent gridContainer c2">
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}4.jpg`} alt=""/>
           </div>
 
@@ -42,7 +42,7 @@ export default function M2({pf}) {
             </p>
           </div>
 
-          <div className="gridCell img background c21">
+          <div className="gridCell imgCenter screenshot c21">
             <img src={`/images/portfolios/${pf.code}/${pf.code}1.jpg`} alt=""/>
           </div>
 
