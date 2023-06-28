@@ -38,7 +38,8 @@
   --j-txt-small:0.875em;
   --j-txt-xsmall:0.75em;
   --j-txt-xxsmall:0.6875em;
-  --j-txt-xxxsmall:10px;
+  --j-txt-xxxsmall:12px;
+  --j-txt-min:12px;
   --j-column-gap:1.5em;
   --j-row-gap:1.5em;
   --j-width-content-basic:1000px;

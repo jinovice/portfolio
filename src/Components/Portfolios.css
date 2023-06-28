@@ -90,7 +90,7 @@
   font-weight: bold;
 }
 .portfolio .content .tags {
-  font-size: var(--j-txt-xsmall);
+  font-size: var(--j-txt-min);
 }
 .portfolio .button {
   z-index: 500;
