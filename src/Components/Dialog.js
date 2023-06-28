@@ -99,6 +99,7 @@ function Dialog({pfs, activePf, setActivePf, isTouchDevice}) {
               </div>
 
               {/*{!Portfolio ? <p>Loading......</p> : <Portfolio pf={pf} />}*/}
+              {Portfolio && <Portfolio pf={pf} />}
 
             </div>
           )};
