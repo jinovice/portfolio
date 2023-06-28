@@ -21,7 +21,7 @@ function Portfolios({pfs, setActivePf}) {
         {pfs.filter(pf => pf.display).map(pf => (
 
           // <Portfolio key={pf.id} pf={pf} activePf={activePf} setActivePf={setActivePf}/>
-          <div key={pf.id} className={`portfolio scroll-element eff-scroll fade-in ${'p'+pf.id} ${pf.size.join(' ')} ${pf.classes.join(' ')}`}/* style={{gridArea: pf.code}}*/>
+          <button key={pf.id} name={`View ${pf.title} Details`} onClick={()=>setActivePf(pf.id)} className={`portfolio scroll-element eff-scroll fade-in ${'p'+pf.id} ${pf.size.join(' ')} ${pf.classes.join(' ')}`}/* style={{gridArea: pf.code}}*/>
             {/*<div className="portfolioContentContainer">*/}
 
               <div className="thumbnail">
@@ -32,27 +32,25 @@ function Portfolios({pfs, setActivePf}) {
               <div className="content">
                 <div className="subtitle">{pf.subtitle}</div>
                 <h3 className="title">{pf.title}</h3>
-                <div className="comment">{pf.comment}</div>
+
+                {/*<ul className="tags roles dark">*/}
+                {/*  {pf.roles.map((role, index) => (<li key={index}>{role}</li>))}*/}
+                {/*</ul>*/}
+                <ul className="tags dark">
+                  {pf.skills.map((skill, index) => (<li key={index}><strong className={`badges ${skill}`}>{skill}</strong></li>))}
+                </ul>
+
               </div>
 
               {pf.url !== "/" &&
                 <>
-                  <button className="button" onClick={()=>setActivePf(pf.id)} style={{backgroundColor: pf.color}}>
+                  <div className="button" style={{backgroundColor: pf.color}}>
                     <div className="more">
-
-                      <h4 className="tagsTitle">Roles</h4>
-                      <ul className="tags roles dark">
-                        {pf.roles.map((role, index) => (<li key={index}>{role}</li>))}
-                      </ul>
-                      <h4 className="tagsTitle">Skills</h4>
-                      <ul className="tags skills">
-                        {pf.skills.map((skill, index) => (<li key={index}>{skill}</li>))}
-                      </ul>
-
+                      <div className="comment">{pf.comment}</div>
                     </div>
 
                     {/*<img src="/images/icons/arrowRight.svg" className="icon" alt="" />*/}
-                  </button>
+                  </div>
 
                   <strong className="viewDetailTxt">VIWE DETAIL</strong>
                   <svg width="20" height="20" className="viewDetailIcon" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +64,7 @@ function Portfolios({pfs, setActivePf}) {
               {/*  <div className="effArticle"></div>*/}
               {/*</div>*/}
             {/*</div>*/}
-          </div>
+          </button>
 
           ))}
       </div>

@@ -3,7 +3,7 @@ import './SkipNav.scss';
 function SkipNav() {
   return (
     <div className={'skip-link'}>
-      <a href="#">Skip to main content</a>
+      <a href="#portfolios">Skip to main content</a>
     </div>
   );
 }

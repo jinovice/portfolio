@@ -18,8 +18,10 @@
   width: 100%;
   height: 100%;
   color: var(--j-color-neutral-black);
+  text-align: left;
   background-color: var(--j-color-neutral-white);
   overflow: hidden;
+  cursor: pointer;
   transition: filter ease-in-out 0.8s, box-shadow ease-in-out 0.8s, transform cubic-bezier(0.7, 0, 0.3, 1) 0.3s;
 }
 .portfolio .thumbnail {
@@ -76,28 +78,19 @@
   overflow: hidden;
 }
 .portfolio .content .subtitle {
-  padding: 0.05em 0.8em;
-  border: solid 1px var(--j-color-neutral-black);
-  border-radius: 0.3em;
+  padding: 0.1em 0em;
   font-size: var(--j-txt-xsmall);
   display: inline-block;
 }
 .portfolio .content .title {
-  margin: 0.2em 0;
+  margin: 0.2em 0 0.6em 0;
   font-size: var(--j-txt-xxxlarge);
   letter-spacing: -0.03em;
   line-height: 0.9em;
   font-weight: bold;
 }
-.portfolio .content .tags li {
-  font-size: 12px;
-  letter-spacing: 0;
-}
-.portfolio .content .comment {
-  margin-top: 1.6em;
-  font-size: var(--j-txt-normal);
-  font-weight: normal;
-  line-height: 1.3em;
+.portfolio .content .tags {
+  font-size: var(--j-txt-xsmall);
 }
 .portfolio .button {
   z-index: 500;
@@ -109,7 +102,6 @@
   height: 100%;
   padding: 1.5em;
   opacity: 0;
-  cursor: pointer;
   transform: translateX(100%);
   transition: all cubic-bezier(0.7, 0, 0.3, 1) 0.7s;
 }
@@ -117,41 +109,14 @@
   width: 100%;
   height: 100%;
 }
+.portfolio .button .more .comment {
+  margin-top: 1.6em;
+  font-size: var(--j-txt-normal);
+  font-weight: normal;
+  line-height: 1.3em;
+}
 .portfolio .button .more h4:first-child {
   margin-top: 0;
-}
-.portfolio .button .more .tagsTitle {
-  margin-top: 1em;
-  text-align: left;
-  letter-spacing: -0.05em;
-}
-.portfolio .button .more ul.tags {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left;
-  gap: 0.2em;
-}
-.portfolio .button .more ul.tags li {
-  padding: 0.2rem 0.5rem;
-  font-size: var(--j-txt-small);
-  color: var(--j-color-neutral-black);
-  line-height: 1.2em;
-  border: solid 1px rgba(0, 0, 0, 0.7);
-  background-color: white;
-}
-.portfolio .button .more ul.tags.dark li {
-  color: white;
-  background-color: var(--j-color-neutral-black);
-}
-.portfolio .button .more ul.tags.colored li {
-  color: white;
-  border: solid 1px var(--j-color-primary-dark);
-  background-color: var(--j-color-primary-dark);
-}
-.portfolio .button .more ul.tags.small li {
-  font-size: var(--j-txt-xxsmall);
 }
 .portfolio .button .more:before {
   display: block;
@@ -189,35 +154,35 @@
   rotate: 45deg;
   transition: all cubic-bezier(0.7, 0, 0.3, 1) 0.7s 0.5s;
 }
-.portfolio.darkColor .button .more .tagsTitle {
+.portfolio.darkColor .button .more .comment {
   color: var(--j-color-neutral-white);
 }
 .portfolio.darkColor .viewDetailTxt {
   color: var(--j-color-neutral-white);
 }
-.portfolio.darkColor:hover .viewDetailIcon path {
+.portfolio.darkColor:hover .viewDetailIcon path, .portfolio.darkColor:focus .viewDetailIcon path {
   stroke: var(--j-color-neutral-white);
 }
-.portfolio:hover .content {
+.portfolio:hover .content, .portfolio:focus .content {
   transform: translate(-60%, -50%);
 }
-.portfolio:hover .thumbnail {
+.portfolio:hover .thumbnail, .portfolio:focus .thumbnail {
   transform: translateX(-30%);
   opacity: 0;
 }
-.portfolio:hover .button {
+.portfolio:hover .button, .portfolio:focus .button {
   opacity: 1;
   transform: translateX(0);
 }
-.portfolio:hover .viewDetailTxt {
+.portfolio:hover .viewDetailTxt, .portfolio:focus .viewDetailTxt {
   opacity: 1;
   right: 2.5em;
 }
-.portfolio:hover .viewDetailIcon {
+.portfolio:hover .viewDetailIcon, .portfolio:focus .viewDetailIcon {
   opacity: 1;
   rotate: -45deg;
 }
-.portfolio:hover .viewDetailIcon path {
+.portfolio:hover .viewDetailIcon path, .portfolio:focus .viewDetailIcon path {
   transition: all cubic-bezier(0.7, 0, 0.3, 1) 0.7s 0.05s;
 }
 .portfolio.gridC1.gridR1 .button {
@@ -276,7 +241,7 @@
     height: 100%;
     opacity: 0;
   }
-  .portfolio.gridC1.gridR1 .content .comment {
+  .portfolio.gridC1.gridR1 .content .tags {
     padding-right: 3em;
   }
   .portfolio.gridC1.gridR1 .button {
@@ -285,7 +250,7 @@
     bottom: -100px;
     transform: translateX(100%);
   }
-  .portfolio.gridC1.gridR1 .button .tagsTitle, .portfolio.gridC1.gridR1 .button .tags {
+  .portfolio.gridC1.gridR1 .button .tagsTitle, .portfolio.gridC1.gridR1 .button .tags, .portfolio.gridC1.gridR1 .button .comment {
     display: none;
   }
   .portfolio.gridC1.gridR1 .viewDetailTxt {
@@ -293,15 +258,15 @@
     bottom: 5em;
     rotate: -45deg;
   }
-  .portfolio.gridC1.gridR1:hover .button {
+  .portfolio.gridC1.gridR1:hover .button, .portfolio.gridC1.gridR1:focus .button {
     transform: translateX(0);
   }
-  .portfolio.gridC1.gridR1:hover .thumbnail {
+  .portfolio.gridC1.gridR1:hover .thumbnail, .portfolio.gridC1.gridR1:focus .thumbnail {
     transform: translateX(0);
     opacity: 0;
     scale: 0.6;
   }
-  .portfolio.gridC1.gridR1:hover .content {
+  .portfolio.gridC1.gridR1:hover .content, .portfolio.gridC1.gridR1:focus .content {
     opacity: 1;
     transform: translate(0, -50%);
   }
@@ -355,19 +320,19 @@
     min-height: 100px;
     transform: translateY(100%);
   }
-  .portfolio.gridC1.gridR2:hover .content {
+  .portfolio.gridC1.gridR2:hover .content, .portfolio.gridC1.gridR2:focus .content {
     transform: translate(0, -70%);
   }
-  .portfolio.gridC1.gridR2:hover .thumbnail {
+  .portfolio.gridC1.gridR2:hover .thumbnail, .portfolio.gridC1.gridR2:focus .thumbnail {
     opacity: 1;
     scale: 0.6;
     transform: translateX(0);
   }
-  .portfolio.gridC1.gridR2:hover .button {
+  .portfolio.gridC1.gridR2:hover .button, .portfolio.gridC1.gridR2:focus .button {
     transform: translateY(0);
   }
 }
-.portfolio:hover.gridC2 .buttons button.viewDetails, .portfolio:hover.gridC3 .buttons button.viewDetails, .portfolio:hover.gridC4 .buttons button.viewDetails {
+.portfolio:hover.gridC2 .buttons button.viewDetails, .portfolio:hover.gridC3 .buttons button.viewDetails, .portfolio:hover.gridC4 .buttons button.viewDetails, .portfolio:focus.gridC2 .buttons button.viewDetails, .portfolio:focus.gridC3 .buttons button.viewDetails, .portfolio:focus.gridC4 .buttons button.viewDetails {
   width: 500px;
   height: 500px;
 }
@@ -412,7 +377,7 @@
   .portfoliosGrid .portfolio .content {
     width: 70%;
   }
-  .portfoliosGrid .portfolio:hover .content {
+  .portfoliosGrid .portfolio:hover .content, .portfoliosGrid .portfolio:focus .content {
     transform: translate(-40%, -50%);
   }
 }

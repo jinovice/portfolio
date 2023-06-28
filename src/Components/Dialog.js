@@ -4,11 +4,12 @@ import './Dialog.scss';
 
 function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
   const popupRef = useRef(null);
+  const popupCloseRef = useRef(null);
   const body = document.querySelector("body");
   let popup;
 
   let pf={};
-  if (activePf !== 0) {
+  if (activePf !== null) {
     pf = pfs.find(item => item.id === activePf);
   }
 
@@ -18,6 +19,10 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
       popup.classList.add('active');
       !isTouchDevice && body.classList.add('popuped');
     }, 0);
+    setTimeout(() => {
+      // popupCloseRef.current.focus();
+      // popupRef.current.focus();
+    }, 300);
   }
 
   const closePopup = () => {
@@ -27,11 +32,6 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
     setTimeout(() => {
       body.classList.remove('popuped');
     }, 500);
-    setTimeout(() => {
-      // popupEff.remove();
-      // console.log(popupEffRef.current);
-      // popupEffRef.current.remove();
-    }, 300);
   }
 
   useEffect(() => {
@@ -86,13 +86,16 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
                   <div className="subtitle">{pf.subtitle}</div>
                 </section>
                 <section className="roles">
-                  <ul className="tags roles dark">
-                    {pf.roles.map((role, index) => (<li key={index}>{role}</li>))}
-                  </ul>
-                  <ul className="tags skills">
-                    {pf.skills.map((role, index) => (<li key={index}>{role}</li>))}
-                  </ul>
+                  {/*<ul className="tags roles dark">*/}
+                  {/*  {pf.roles.map((role, index) => (<li key={index}>{role}</li>))}*/}
+                  {/*</ul>*/}
+                  {/*<ul className="tags skills">*/}
+                  {/*  {pf.skills.map((role, index) => (<li key={index}>{role}</li>))}*/}
+                  {/*</ul>*/}
                 </section>
+                <ul className="tags skills">
+                  {pf.skills.map((skill, index) => (<li key={index}><strong className={`badges ${skill}`}>{skill}</strong></li>))}
+                </ul>
               </div>
 
               {!Portfolio ? <p>Loading......</p> : <Portfolio pf={pf} />}
@@ -100,7 +103,7 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
             </div>
           )};
         </>
-        <button className="close" onClick={closePopup}><span className="icon x">CLOSE</span></button>
+        <button className="close" onClick={closePopup} ref={popupCloseRef}><span className="icon x">CLOSE</span></button>
       </div>
     </div>
   )

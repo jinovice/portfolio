@@ -9,12 +9,32 @@ export default function Jetflix({pf}) {
       {pf && (
         <div className="portfolioContent gridContainer c2">
 
-          <div className="gridCell txt c21">
+          <div className="gridCell imgCenter screenshot c21">
+            <img src={`/images/portfolios/${pf.code}/${pf.code}S1.jpg`} alt=""/>
+          </div>
+
+          <div className="gridCell displayTxt dark c21">
             <p>
               Figma-based UI/UX Design for a Mobile Video Playback Application with Dark Mode
             </p>
+          </div>
+
+          <div className="gridCell imgCenter screenshot c21">
+            <img src={`/images/portfolios/${pf.code}/${pf.code}S2.jpg`} alt=""/>
+          </div>
+
+          <div className="gridCell txt c21">
             <p>
-              For my personal side project aimed at improving my skills, I undertook the task of designing a mobile application for video playback, inspired by the formats of popular platforms like Netflix and YouTube. Leveraging Figma, I created a captivating user experience by incorporating components, wireframes, and user flows.
+              I focused on optimizing libraries and components to create reusable and logical source code. With a thorough understanding of HTML5 and CSS3, I dedicated considerable effort to leveraging Figma as a collaborative tool and exploring effective communication methods. My goal was to ensure seamless collaboration and maximize efficiency in utilizing Figma while contemplating the best practices for teamwork.            </p>
+          </div>
+
+          <div className="gridCell imgCenter screenshot c21">
+            <img src={`/images/portfolios/${pf.code}/${pf.code}S4.jpg`} alt=""/>
+          </div>
+
+          <div className="gridCell txt c21">
+            <p>
+              The project also focused on enhancing the user's interaction with the app by implementing a dark mode feature. By providing a sleek and visually pleasing dark interface, the application ensures a comfortable viewing experience even in low-light environments.
             </p>
           </div>
 
@@ -24,32 +44,15 @@ export default function Jetflix({pf}) {
 
           <div className="gridCell txt c21">
             <p>
-              The project focused on enhancing the user's interaction with the app by implementing a dark mode feature. By providing a sleek and visually pleasing dark interface, the application ensures a comfortable viewing experience even in low-light environments.
-            </p>
-          </div>
-
-          <div className="gridCell img c21">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}2.jpg`} alt=""/>
-          </div>
-
-          <div className="gridCell txt c21">
-            <p>
               Using Figma's powerful design tools, I crafted a comprehensive set of components that maintained consistency throughout the application. These components enabled seamless navigation and intuitive user interactions, contributing to an immersive video playback experience.
             </p>
-          </div>
-
-          <div className="gridCell img c21">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}3.jpg`} alt=""/>
-          </div>
-
-          <div className="gridCell txt c21">
             <p>
               In addition to the component library, I created detailed wireframes that visualized the app's structure and layout. The wireframes served as a blueprint, guiding the development process and ensuring that the final product met the intended design goals.
             </p>
           </div>
 
           <div className="gridCell img c21">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}4.jpg`} alt=""/>
+            <img src={`/images/portfolios/${pf.code}/${pf.code}2.jpg`} alt=""/>
           </div>
 
           <div className="gridCell txt c21">
@@ -62,7 +65,7 @@ export default function Jetflix({pf}) {
           </div>
 
           <div className="gridCell img c21">
-            <img src={`/images/portfolios/${pf.code}/${pf.code}5.jpg`} alt=""/>
+            <img src={`/images/portfolios/${pf.code}/${pf.code}3.jpg`} alt=""/>
           </div>
 
           {/*<div className="gridCell img c21">*/}

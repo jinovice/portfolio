@@ -14,9 +14,10 @@
   --j-color-neutral-white:#fff;
   --j-color-neutral-white-5:rgba(255,255,255,0.5);
   --j-color-neutral-white-9:rgba(255,255,255,0.9);
-  --j-color-neutral-black-9:rgba(0,0,0,0.9);
-  --j-color-neutral-black-5:rgba(0,0,0,0.5);
   --j-color-neutral-black-1:rgba(0,0,0,0.1);
+  --j-color-neutral-black-5:rgba(0,0,0,0.5);
+  --j-color-neutral-black-7:rgba(0,0,0,0.7);
+  --j-color-neutral-black-9:rgba(0,0,0,0.9);
   --j-color-focus:#06c;
   --j-header-height:50px;
   --j-logo-txt:1.2rem;
@@ -95,6 +96,7 @@ p {
 }
 
 button {
+  font-size: 100%;
   border: 0;
   background-color: transparent;
 }
@@ -322,6 +324,98 @@ code {
 
 .touch-device .shortcut {
   display: none !important;
+}
+
+ul.tags {
+  margin: 0.5em 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  gap: 0.4em;
+}
+
+.badges {
+  display: inline-block;
+  padding: 0.4em 0.8em 0.4em 2.4em;
+  color: white;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1em;
+  background-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position: 0.6em center;
+  background-color: var(--j-color-neutral-black-9);
+  transition: background-color 0.5s;
+}
+.badges.HTML5 {
+  background-image: url("../../public/images/icons/html5.svg");
+}
+.badges.CSS3 {
+  background-image: url("../../public/images/icons/css3.svg");
+}
+.badges.Sass {
+  background-image: url("../../public/images/icons/sass.svg");
+}
+.badges.W3C, .badges.WCAG {
+  background-image: url("../../public/images/icons/w3c.svg");
+}
+.badges.Illustrator {
+  background-image: url("../../public/images/icons/adobeillustrator.svg");
+}
+.badges.Photoshop {
+  background-image: url("../../public/images/icons/adobephotoshop.svg");
+}
+.badges.JS {
+  background-image: url("../../public/images/icons/javascriptW.svg");
+}
+.badges.Figma {
+  background-image: url("../../public/images/icons/figma.svg");
+}
+.badges.MicrosoftOffice {
+  background-image: url("../../public/images/icons/microsoftoffice.svg");
+}
+.badges.React {
+  background-image: url("../../public/images/icons/react.svg");
+}
+.badges.Instagram {
+  background-image: url("../../public/images/icons/instagram.svg");
+}
+
+.colored > li > .badges.HTML5, .portfolio:hover .badges.HTML5 {
+  background-color: #E34F26;
+}
+.colored > li > .badges.CSS3, .portfolio:hover .badges.CSS3 {
+  background-color: #1572B6;
+}
+.colored > li > .badges.Sass, .portfolio:hover .badges.Sass {
+  background-color: #CC6699;
+}
+.colored > li > .badges.W3C, .colored > li > .badges.WCAG, .portfolio:hover .badges.W3C, .portfolio:hover .badges.WCAG {
+  background-color: #005A9C;
+}
+.colored > li > .badges.Illustrator, .portfolio:hover .badges.Illustrator {
+  background-color: #FF9A00;
+}
+.colored > li > .badges.Photoshop, .portfolio:hover .badges.Photoshop {
+  background-color: #31A8FF;
+}
+.colored > li > .badges.JS, .portfolio:hover .badges.JS {
+  color: black;
+  background-color: #F7DF1E;
+  background-image: url("../../public/images/icons/javascript.svg");
+}
+.colored > li > .badges.Figma, .portfolio:hover .badges.Figma {
+  background-color: #F24E1E;
+}
+.colored > li > .badges.MicrosoftOffice, .portfolio:hover .badges.MicrosoftOffice {
+  background-color: #D83B01;
+}
+.colored > li > .badges.React, .portfolio:hover .badges.React {
+  background-color: #10aed9;
+}
+.colored > li > .badges.Instagram, .portfolio:hover .badges.Instagram {
+  background-color: #E4405F;
 }
 
 /*# sourceMappingURL=base.css.map */

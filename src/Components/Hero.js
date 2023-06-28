@@ -107,14 +107,20 @@ function Hero() {
           <div className="intro font-bold">
             <h1 className="line-1 anim-typewriter">Hi, I am Jinyong Choi.</h1>
             {/*<h1 className="line-1 anim-typewriter">HI, i AM JINYONG CHOI.</h1>*/}
-            <p>
-              Web Development Journey<br />Jino's Portfolio
-            </p>
-            <ul className="tags">
-              <li>FRONT-END DEVELOPMENT</li>
-              <li>GRAPHIC DESIGN</li>
-              <li>WCAG</li>
-              <li>UI/UX DESIGN</li>
+            {/*<p>Web Development Journey<br />Jino's Portfolio</p>*/}
+            <p>A highly skilled Front-End Developer<br />with over 10 years of experience in Australia</p>
+            <ul className="tags colored">
+              <li><strong className="badges HTML5">HTML5</strong></li>
+              <li><strong className="badges CSS3">CSS3</strong></li>
+              <li><strong className="badges JS">JS</strong></li>
+              <li><strong className="badges React">React</strong></li>
+              <li><strong className="badges Sass">Sass</strong></li>
+              <li><strong className="badges WCAG">WCAG</strong></li>
+              <li><strong className="badges Photoshop">Photoshop</strong></li>
+              <li><strong className="badges Illustrator">Illustrator</strong></li>
+              <li><strong className="badges Instagram">Instagram</strong></li>
+              <li><strong className="badges Figma">Figma</strong></li>
+              <li><strong className="badges MicrosoftOffice">MicrosoftOffice</strong></li>
             </ul>
           </div>
 

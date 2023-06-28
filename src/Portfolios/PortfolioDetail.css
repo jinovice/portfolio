@@ -24,36 +24,9 @@
   font-size: min(var(--j-display-txt-small), 60px);
   line-height: 1em;
 }
-.portfolioDetailHeader .roles {
-  margin-top: 2em;
-}
 .portfolioDetailHeader ul.tags {
-  margin: 0.3em 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left;
-  gap: 0.2em;
-}
-.portfolioDetailHeader ul.tags li {
-  padding: 0.6rem 1.8vw;
-  font-size: max(var(--j-display-txt-xxxsmall), 12px);
-  color: var(--j-color-neutral-black);
-  line-height: 2em;
-  border: solid 1px rgba(0, 0, 0, 0.7);
-  background-color: white;
-}
-.portfolioDetailHeader ul.tags.dark li {
-  color: white;
-  background-color: var(--j-color-neutral-black);
-}
-.portfolioDetailHeader ul.tags.colored li {
-  color: white;
-  border: solid 1px var(--j-color-primary-dark);
-  background-color: var(--j-color-primary-dark);
-}
-.portfolioDetailHeader ul.tags.small li {
-  font-size: var(--j-txt-xxsmall);
+  margin-top: 2em;
+  font-size: var(--j-txt-large);
 }
 .portfolioDetailHeader ul.links {
   display: flex;

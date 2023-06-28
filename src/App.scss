@@ -23,20 +23,6 @@
   }
 }
 
-body {
-  position: relative;
-  background-color: var(--j-color-background-body);
-  font-size: 100%;
-  line-height:1.4em;
-  font-family: -apple-system, 'Inter', sans, serif, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 400;
-
-  &.popuped {
-    //overflow: hidden;
-    //padding-right: 17px;
-  }
-}
-
 //eff-scroll
 .scroll-event {
   width: 100%;

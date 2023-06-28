@@ -9,6 +9,10 @@ export default function Moongmio({pf}) {
       {pf && (
           <div className="portfolioContent gridContainer c2">
 
+            {/*<ul className="tags skills">*/}
+            {/*  <li><strong className="badges Instagram">Instagram</strong></li>*/}
+            {/*</ul>*/}
+
             <div className="gridCell img background c21">
               <img src={`/images/portfolios/${pf.code}/${pf.code}1.jpg`} alt=""/>
             </div>
@@ -29,15 +33,15 @@ export default function Moongmio({pf}) {
 
             <div className="gridCell txt c21">
               <p>
-                By analyzing target demographics and utilizing platforms such as Instagram, Facebook, and Twitter, I have developed engaging content that resonates with the audience. This includes creating visually appealing graphics, writing compelling captions, and leveraging trending hashtags to maximize reach and engagement.
+                By analyzing target demographics and utilizing platforms such as Instagram and Facebook, I have developed engaging content that resonates with the audience. This includes creating visually appealing graphics, writing compelling captions, and leveraging trending hashtags to maximize reach and engagement.
               </p>
             </div>
 
-            <div className="gridCell txt c21">
-              <p>
-                I have also implemented data-driven strategies, closely monitoring analytics and metrics to optimize campaign performance. Through A/B testing and audience segmentation, I continuously refine and improve marketing strategies to ensure maximum impact and return on investment.
-              </p>
-            </div>
+            {/*<div className="gridCell txt c21">*/}
+            {/*  <p>*/}
+            {/*    I have also implemented data-driven strategies, closely monitoring analytics and metrics to optimize campaign performance. Through A/B testing and audience segmentation, I continuously refine and improve marketing strategies to ensure maximum impact and return on investment.*/}
+            {/*  </p>*/}
+            {/*</div>*/}
 
             <div className="gridCell imgCenter mobileScreenshot img3 c21">
               <img src={`/images/portfolios/${pf.code}/${pf.code}T1.jpg`} alt=""/>
@@ -61,7 +65,7 @@ export default function Moongmio({pf}) {
             <div className="gridCell txt c21">
               <h2>Drawing and Product Design</h2>
               <p>
-                In addition to character design and cartoon serialization, I have also been involved in drawing and product design. Utilizing tools such as Photoshop and Illustrator, I create visually captivating illustrations and designs. I have collaborated with English education company SPEAK and character merchandise production company Shuping Korea for advertising campaigns, leveraging my skills to develop promotional materials. By engaging with my followers, I ensure effective communication and continuously promote my Instagram account to reach a wider audience.
+                In addition to character design and cartoon serialization, I have also been involved in drawing and product design. Utilizing tools such as Photoshop and Illustrator, I create visually captivating illustrations and designs. I have collaborated with English education company SPEAK and character merchandise production company Supigen Korea for advertising campaigns, leveraging my skills to develop promotional materials. By engaging with my followers, I ensure effective communication and continuously promote my Instagram account to reach a wider audience.
               </p>
             </div>
 
@@ -69,6 +73,11 @@ export default function Moongmio({pf}) {
               <img src={`/images/portfolios/${pf.code}/${pf.code}P1.jpg`} alt=""/>
               <img src={`/images/portfolios/${pf.code}/${pf.code}P2.jpg`} alt=""/>
               <img src={`/images/portfolios/${pf.code}/${pf.code}P3.jpg`} alt=""/>
+            </div>
+
+            <div className="gridCell txt c21">
+              <p>
+                Through designing and successfully growing my personal SNS account, I gained valuable experience in marketing and promotion. This experience deepened my understanding of how digital applications and services engage and interact with customers. It has been an insightful journey that can be showcased in my portfolio, highlighting my ability to connect with audiences and navigate the digital landscape effectively.              </p>
             </div>
 
           </div>
