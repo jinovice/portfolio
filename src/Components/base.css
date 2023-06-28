@@ -35,9 +35,9 @@
   --j-txt-xlarge:1.75em;
   --j-txt-large:1.25em;
   --j-txt-normal:1em;
-  --j-txt-small:0.875em;
-  --j-txt-xsmall:0.75em;
-  --j-txt-xxsmall:0.6875em;
+  --j-txt-small: max(0.875em, 12px);
+  --j-txt-xsmall: max(0.75em, 12px);
+  --j-txt-xxsmall: max(0.6875em, 12px);
   --j-txt-xxxsmall:12px;
   --j-txt-min:12px;
   --j-column-gap:1.5em;
@@ -69,7 +69,7 @@ html {
 }
 @media (max-width: 500px) {
   html {
-    font-size: 50%;
+    font-size: 70%;
   }
 }
 
