@@ -53,10 +53,10 @@
     //overflow: hidden;
 
     @media (max-width: 734px) {
-      zoom: 0.6;
+      zoom: 0.5;
     }
     @media (max-height: 1024px) {
-      zoom: 0.6;
+      zoom: 0.5;
     }
     @media (max-width: 500px) {
       zoom: 0.4;
@@ -141,6 +141,7 @@
   }
 
   ul.tags {
+    padding: 0 1em;
     margin: 2em auto 0 auto;
     max-width:400px;
     display:flex;

@@ -1,16 +1,15 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Portfolios.scss';
 
 // function Portfolios({pfs, activePf, updateActivePf}) {
 function Portfolios({pfs, setActivePf}) {
 
-  const handleMouseOver = (event) => {
-  };
+  // const handleMouseOver = (event) => {
+  // };
 
   return (
 
     <section id="portfolios">
-      {console.log('Portfolios Rendered')}
 
       <div className="sectionHeader">
         <h2>Portfolios</h2>

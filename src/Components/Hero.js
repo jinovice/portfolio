@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { debounce } from 'lodash';
 import './Hero.scss';
 // import './heroAnimation';
 
@@ -81,24 +80,23 @@ function Hero() {
 
   return (
       <section id="hero" ref={eventAreaRef}>
-        {console.log('hero Rendered')}
 
         <div className="display">
 
           <div className="heroAnimation">
             <div className="itsMe depth1">
               <div className="myFace depth3">
-                <div className="ex depth2"><img src="images/hero/ex.svg" alt=""/></div>
-                <div className="face"><img src="images/hero/head.svg" alt=""/></div>
+                <div className="ex depth2"><img src={process.env.PUBLIC_URL + '/images/hero/ex.svg'} alt=""/></div>
+                <div className="face"><img src={process.env.PUBLIC_URL + '/images/hero/head.svg'} alt=""/></div>
               </div>
               <div className="myBody depth3">
-                <div className="eff depth2"><img src="images/hero/eff.svg" alt=""/></div>
-                <div className="back depth1"><img src="images/hero/body.svg" alt=""/></div>
+                <div className="eff depth2"><img src={process.env.PUBLIC_URL + '/images/hero/eff.svg'} alt=""/></div>
+                <div className="back depth1"><img src={process.env.PUBLIC_URL + '/images/hero/body.svg'} alt=""/></div>
               </div>
               <div className="myBg depth5">
-                <div className="bg1 depth1"><img src="images/hero/bg1.svg" alt=""/></div>
-                <div className="bg2 depth3"><img src="images/hero/bg2.svg" alt=""/></div>
-                <div className="bg3 depth2"><img src="images/hero/bg3.svg" alt=""/></div>
+                <div className="bg1 depth1"><img src={process.env.PUBLIC_URL + '/images/hero/bg1.svg'} alt=""/></div>
+                <div className="bg2 depth3"><img src={process.env.PUBLIC_URL + '/images/hero/bg2.svg'} alt=""/></div>
+                <div className="bg3 depth2"><img src={process.env.PUBLIC_URL + '/images/hero/bg3.svg'} alt=""/></div>
                 {/*<div className="bg4 depth5"><img src="images/hero/bg4.svg" alt=""/></div>*/}
               </div>
             </div>

@@ -6,7 +6,6 @@ function Portfolios() {
 
     <section id="experience">
       <div className="sectionHeader">
-        <div className="iconH2-2"><img src="/src/images/hero/h2.svg" alt=""/></div>
         <h2>Experience</h2>
         <p>Gaining valuable skills and expertise through professional experience</p>
       </div>

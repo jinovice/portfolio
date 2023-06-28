@@ -2,7 +2,7 @@
 import './PortfolioDetail.scss';
 import React from "react";
 
-export default function Danahus({pf}) {
+export default function Daekyo({pf}) {
 
   return (
     <>

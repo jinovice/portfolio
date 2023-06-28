@@ -63,19 +63,25 @@ html {
 }
 @media (max-width: 734px) {
   html {
-    font-size: 90%;
+    font-size: 80%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
   }
 }
 
 body {
-  letter-spacing: -0.01em;
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
 }
 
+body {
+  font-family: -apple-system, "Inter", sans, serif, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
 ul, ol, dl {
   list-style: none;
   padding-inline-start: 0;
@@ -123,9 +129,9 @@ code {
   content: "";
   position: absolute;
   left: 50%;
-  top: -60px;
-  width: 30px;
-  height: 30px;
+  top: max(-5vw, -60px);
+  width: min(5vw, 30px);
+  height: min(5vw, 30px);
   background-image: url("../../public/images/icons/h2sub.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -160,7 +166,7 @@ code {
   content: "";
   position: absolute;
   left: calc(50% - 10px);
-  top: -40px;
+  top: max(-2vw, -40px);
   width: 20px;
   height: 0;
   border-top: solid 1px black;

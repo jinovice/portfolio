@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 // import 'normalize.css';
 import './Components/base.scss';
 import './App.scss';
@@ -13,25 +13,12 @@ import Experiences from "./Components/Experiences";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
 import Dialog from "./Components/Dialog";
-import Stt from "./Portfolios/Stt";
 
 function App() {
   const [pfs, setPfs] = useState(null);
   const [isSticky, setIsSticky] = useState(false);
 
   const [activePf, setActivePf] = useState(undefined);
-  // const [activePf, setActivePf] = useState(53);
-  console.log(activePf);
-  const updateActivePf = (id, clientX, clientY) => {
-    // console.log(activePf + "  updateActivePf S " + id, clientX, clientY);
-    setActivePf(activePf => {
-      const updatedActivePf = [...activePf];
-      updatedActivePf[0] = id;
-      updatedActivePf[1] = clientX;
-      updatedActivePf[2] = clientY;
-      return updatedActivePf;
-    });
-  };
 
   const [screenWH, setScreenWH] = useState([0, 0]);
   const updateScreenWH = (screenX, screenY) => {
@@ -88,18 +75,18 @@ function App() {
       element.classList.add("scrolled");
     };
 
-    const hideScrollElement = (element) => {
-      // element.classList.remove("scrolled");
-    };
+    // const hideScrollElement = (element) => {
+    //   element.classList.remove("scrolled");
+    // };
 
     const handleScrollAnimation = () => {
       // console.log((window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop), (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)>20);
       setIsSticky(()=>(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)>160)
       scrollElements.forEach((el) => {
-        if (elementInView(el, 1.15)) {
+        if (elementInView(el, 1.05)) {
           displayScrollElement(el);
         } else if (elementOutofView(el)) {
-          hideScrollElement(el)
+          // hideScrollElement(el)
         }
       })
     }
@@ -136,7 +123,7 @@ function App() {
         <SkipNav/>
         <Header isSticky={isSticky} />
         <Hero/>
-        <Portfolios pfs={pfs} setActivePf={setActivePf}/>
+        <Portfolios pfs={pfs} activePf={activePf} setActivePf={setActivePf}/>
         <Experiences/>
         <About/>
         <Footer/>

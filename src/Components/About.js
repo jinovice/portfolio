@@ -4,7 +4,6 @@ function About() {
   return (
     <section id="about">
       <div className="sectionHeader _basicW">
-        <div className="iconH2-3"><img src="/src/images/hero/h2.svg" alt=""/></div>
         <h2>About</h2>
         <p>Expertise and Proficiencies: A Closer Look at My Skill Set and Tools</p>
       </div>
@@ -30,7 +29,7 @@ function About() {
           <h3>EXPERT IN</h3>
           <div className="mySkills">
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>HTML5/CSS3</h4>
               <div className="grade">EXPERT</div>
               <div className="bar">
@@ -38,7 +37,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>WCAG</h4>
               <div className="grade">EXPERT</div>
               <div className="bar">
@@ -46,7 +45,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>JAVASCRIPT</h4>
               <div className="grade">ADVANCED</div>
               <div className="bar">
@@ -54,7 +53,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>REACT</h4>
               <div className="grade">INTERMEDIATE</div>
               <div className="bar">
@@ -62,7 +61,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>PHOTOSHOP</h4>
               <div className="grade">EXPERT</div>
               <div className="bar">
@@ -70,7 +69,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>ILLUSTRATOR</h4>
               <div className="grade">EXPERT</div>
               <div className="bar">
@@ -78,7 +77,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>MSOFFICE</h4>
               <div className="grade">EXPERT</div>
               <div className="bar">
@@ -86,7 +85,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>FIGMA</h4>
               <div className="grade">ADVANCED</div>
               <div className="bar">
@@ -94,7 +93,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>SASS</h4>
               <div className="grade">INTERMEDIATE</div>
               <div className="bar">
@@ -102,7 +101,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>WORDPRESS</h4>
               <div className="grade">INTERMEDIATE</div>
               <div className="bar">
@@ -110,7 +109,7 @@ function About() {
               </div>
             </div>
 
-            <div className="graph">
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>PREMIERE PRO</h4>
               <div className="grade">INTERMEDIATE</div>
               <div className="bar">

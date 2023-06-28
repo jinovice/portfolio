@@ -77,13 +77,13 @@
 }
 
 .scrolled.slide-right {
-  animation: slide-in-right 1s ease-in-out both;
+  animation: slide-in-right 1s ease-in-out both 0.3s;
 }
 
 @keyframes slide-in-left {
   0% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
     opacity: 0;
   }
   100% {
@@ -95,8 +95,8 @@
 
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
     opacity: 0;
   }
   100% {

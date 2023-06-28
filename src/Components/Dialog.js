@@ -1,13 +1,15 @@
-import React, { useTransition, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // import Hyundai from "../Portfolios/Hyundai";
 import './Dialog.scss';
 
-function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
+function Dialog({pfs, activePf, setActivePf, isTouchDevice}) {
   const popupRef = useRef(null);
   const popupCloseRef = useRef(null);
   const body = document.querySelector("body");
   let popup;
+  popup = popupRef.current;
 
+  console.log(activePf);
   let pf={};
   if (activePf !== null) {
     pf = pfs.find(item => item.id === activePf);
@@ -35,7 +37,6 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
   }
 
   useEffect(() => {
-    popup = popupRef.current;
   });
 
   const [Portfolio, setPortfolio] = useState(null);
@@ -47,7 +48,9 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
       // console.log(activePf);
 
       if (activePf !== undefined) {
-        pf = pfs.find(item => item.id === activePf);
+        console.log(pf);
+        // pf = pfs.find(item => item.id === activePf);
+        // console.log(pf);
         openPopup();
         const importComponent = async () => {
           setPortfolio(null);
@@ -68,10 +71,7 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
       setPortfolio(null);
     };
 
-  }, [activePf]);
-
-  useEffect(() => {
-  }, [activePf]);
+  });
 
   return (
     <div className="popup" ref={popupRef}>
@@ -93,7 +93,7 @@ function Dialog({pfs, activePf, setActivePf, screenWH, isTouchDevice}) {
                   {/*  {pf.skills.map((role, index) => (<li key={index}>{role}</li>))}*/}
                   {/*</ul>*/}
                 </section>
-                <ul className="tags skills">
+                <ul className="tags colored">
                   {pf.skills.map((skill, index) => (<li key={index}><strong className={`badges ${skill}`}>{skill}</strong></li>))}
                 </ul>
               </div>
