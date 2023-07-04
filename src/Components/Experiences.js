@@ -22,7 +22,7 @@ function Portfolios() {
           </dt>
           <dd className="scroll-element eff-scroll slide-right">
             <div className="description">
-              Front-end web developoment and web accessibility consulting services for large corporations, universities, and e-commerce companies.
+              Front-end web development and web accessibility consulting services for large corporations, universities, and e-commerce companies.
             </div>
             <div className="_group">
               <ul className="tags roles dark">
@@ -39,8 +39,8 @@ function Portfolios() {
               </ul>
             </div>
             <ul className="works">
-              <li>Front-end web developoment for an application that automatically calculates materials for prefabricated buildings.</li>
-              <li>Front-end web developoment and web accessibility consulting services for the Hyundai Motor website and its subdomains BlueMembers and CSR, focusing on web accessibility and responsive design.</li>
+              <li>Front-end web development for an application that automatically calculates materials for prefabricated buildings.</li>
+              <li>Front-end web development and web accessibility consulting services for the Hyundai Motor website and its subdomains BlueMembers and CSR, focusing on web accessibility and responsive design.</li>
               <li>Created logos for various companies including Samil technology Thailand, Ji & Mi plastic surgery, Olta Academy, and more.</li>
               <li>SNS Instagram marketing for my own characters and cartoons.</li>
               {/*<li>Designed the UI/UX for an automated solution for construction materials and estimation.</li>*/}
@@ -56,7 +56,7 @@ function Portfolios() {
           </dt>
           <dd className="scroll-element eff-scroll slide-right">
             <div className="description">
-              Overall Front-end web developoment, UI/UX design, enhancement, and maintenance for online border systems using electronic blackboard on a web platform basis.
+              Overall Front-end web development, UI/UX design, enhancement, and maintenance for online border systems using electronic blackboard on a web platform basis.
             </div>
             <div className="_group">
               <ul className="tags roles dark">
@@ -71,7 +71,7 @@ function Portfolios() {
               </ul>
             </div>
             <ul className="works">
-              <li>Front-end web developoment for web-based e-learning solutions, training material management solutions, and interactive video lesson solutions, with a focus on web accessibility and responsive design.</li>
+              <li>Front-end web development for web-based e-learning solutions, training material management solutions, and interactive video lesson solutions, with a focus on web accessibility and responsive design.</li>
             </ul>
           </dd>
           <dt className="scroll-element eff-scroll slide-left">
@@ -83,7 +83,7 @@ function Portfolios() {
           </dt>
           <dd className="scroll-element eff-scroll slide-right">
             <div className="description">
-              Front-end web developoment with a focus on web accessibility for local government, large corporations, and universities.
+              Front-end web development with a focus on web accessibility for local government, large corporations, and universities.
             </div>
             <div className="_group">
               <ul className="tags roles dark">
@@ -99,7 +99,7 @@ function Portfolios() {
             </div>
             <ul className="works">
               <li>Designed the UI/UX for Giordano and BSX shopping mall websites.</li>
-              <li>Front-end web developoment for Korea Scholarship Foundation, Daekyo, ImTcast, StampBack, Insuko, and more.</li>
+              <li>Front-end web development for Korea Scholarship Foundation, Daekyo, ImTcast, StampBack, Insuko, and more.</li>
               <li>Korea Water Resources Corporation web portal.</li>
               <li>And more.</li>
             </ul>

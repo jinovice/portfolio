@@ -5,7 +5,7 @@
   position: relative;
   padding: 10vh 0;
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   perspective: 1800px;
   overflow: hidden;
 }

@@ -24,7 +24,7 @@
     "subtitle": "Online education solution",
     "roles": ["FRONT-END", "TEAM LEADER"],
     "skills": ["HTML5", "CSS3", "JS", "WCAG"],
-    "comment": "A versatile cross-device online solution, featuring a web-based responsive design",
+    "comment": "A web-based online learning solution that supports multi-device compatibility",
     "description": "A versatile cross-device online solution, featuring a web-based responsive design, that seamlessly integrates an interactive whiteboard with an online learning platform. This comprehensive tool empowers users to engage in digital sketching, drawing, and facilitates the delivery of interactive online lessons. Whether accessed from desktops, tablets, or mobile devices, it provides a unified and adaptable experience across various platforms.",
     "src": "notepad.jpg",
     "url": "/notepad",
@@ -184,7 +184,7 @@
     "img": 9,
     "color": "#4b81d7",
     "size": ["gridC1", "gridR2"],
-    "classes":  ["def"]
+    "classes":  ["def", "darkColor"]
   },
   {
     "id": 50,
