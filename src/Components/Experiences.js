@@ -15,7 +15,7 @@ function Portfolios() {
             <div className="eff">
               <h3 className="company">Freelancer</h3>
               {/*<div className="role">UI/UX Designer</div>*/}
-              <div className="role">Front-end developer</div>
+              <div className="role">Frontend web developer</div>
               <div className="role">Graphic designer</div>
               <div className="when">2017 - 2021</div>
             </div>
@@ -50,7 +50,7 @@ function Portfolios() {
           <dt className="scroll-element eff-scroll slide-left">
             <div className="eff">
               <h3 className="company">Incloud Inc.</h3>
-              <div className="role">Web Publisher</div>
+              <div className="role">Frontend web developer</div>
               <div className="when">2015 - 2017</div>
             </div>
           </dt>
@@ -77,7 +77,7 @@ function Portfolios() {
           <dt className="scroll-element eff-scroll slide-left">
             <div className="eff">
               <h3 className="company">Denovation</h3>
-              <div className="role">Web Publisher</div>
+              <div className="role">Frontend web developer</div>
               <div className="when">2013 - 2015</div>
             </div>
           </dt>
@@ -109,7 +109,7 @@ function Portfolios() {
               {/*<div className="url"><a href="http://www.k3i.co.kr/" target="_blank">Website</a></div>*/}
               <h3 className="company">K3I Co., Ltd.</h3>
               <div className="role">Graphic & Web Designer</div>
-              <div className="role">Front-end developer</div>
+              <div className="role">Frontend web developer</div>
               <div className="when">2011 - 2013</div>
             </div>
           </dt>
