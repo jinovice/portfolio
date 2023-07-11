@@ -61,6 +61,14 @@ function About() {
               </div>
             </div>
 
+            {/*<div className="graph scroll-element eff-scroll fade-in-bottom">*/}
+            {/*  <h4>TYPESCRIPT</h4>*/}
+            {/*  <div className="grade">INTERMEDIATE</div>*/}
+            {/*  <div className="bar">*/}
+            {/*    <div className="fill g50"></div>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
+
             <div className="graph scroll-element eff-scroll fade-in-bottom">
               <h4>PHOTOSHOP</h4>
               <div className="grade">EXPERT</div>
