@@ -185,9 +185,6 @@
 .portfolio:hover .viewDetailIcon path, .portfolio:focus .viewDetailIcon path {
   transition: all cubic-bezier(0.7, 0, 0.3, 1) 0.7s 0.05s;
 }
-.portfolio.gridC1.gridR1 .button {
-  color: var(--j-color-neutral-white);
-}
 @media (max-width: 1024px) {
   .portfolio.gridC1.gridR1 {
     grid-column: span 2;
