@@ -438,6 +438,12 @@ ul.tags {
   &.Instagram {
     background-image: url("../../public/images/icons/instagram.svg");
   }
+  &.GitHub {
+    background-image: url("../../public/images/icons/githubW.svg");
+  }
+  &.Wordpress {
+    background-image: url("../../public/images/icons/WordpressW.svg");
+  }
 }
 
 .colored>li>.badges, .portfolio:hover .badges {
@@ -476,5 +482,8 @@ ul.tags {
   }
   &.Instagram {
     background-color: #E4405F;
+  }
+  &.Wordpress {
+    background-color: #21759B;
   }
 }

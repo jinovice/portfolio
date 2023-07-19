@@ -118,6 +118,8 @@ function Hero() {
               <li><strong className="badges Illustrator">Illustrator</strong></li>
               <li><strong className="badges Instagram">Instagram</strong></li>
               <li><strong className="badges Figma">Figma</strong></li>
+              <li><strong className="badges GitHub">GitHub</strong></li>
+              {/*<li><strong className="badges Wordpress">Wordpress</strong></li>*/}
               <li><strong className="badges MicrosoftOffice">MicrosoftOffice</strong></li>
             </ul>
           </div>

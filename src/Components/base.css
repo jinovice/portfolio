@@ -388,6 +388,12 @@ ul.tags {
 .badges.Instagram {
   background-image: url("../../public/images/icons/instagram.svg");
 }
+.badges.GitHub {
+  background-image: url("../../public/images/icons/githubW.svg");
+}
+.badges.Wordpress {
+  background-image: url("../../public/images/icons/WordpressW.svg");
+}
 
 .colored > li > .badges.HTML5, .portfolio:hover .badges.HTML5 {
   background-color: #E34F26;
@@ -423,6 +429,9 @@ ul.tags {
 }
 .colored > li > .badges.Instagram, .portfolio:hover .badges.Instagram {
   background-color: #E4405F;
+}
+.colored > li > .badges.Wordpress, .portfolio:hover .badges.Wordpress {
+  background-color: #21759B;
 }
 
 /*# sourceMappingURL=base.css.map */
