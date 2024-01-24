@@ -13,11 +13,40 @@ function Portfolios() {
         <dl>
           <dt className="scroll-element eff-scroll slide-left">
             <div className="eff">
+              <h3 className="company">Karmabunny</h3>
+              <div className="role">Frontend web developer</div>
+              <div className="when">2023 - 2024</div>
+            </div>
+          </dt>
+          <dd className="scroll-element eff-scroll slide-right">
+            <div className="description">
+            Overall Front-end web development, UI/UX design, enhancement, and maintenance for diverse websites.
+            </div>
+            <div className="_group">
+              <ul className="tags roles dark">
+                <li>FRONT-END</li>
+              </ul>
+              <ul className="tags tools">
+                <li>HTML/CSS</li>
+                <li>JS</li>
+                <li>Twig</li>
+                <li>CraftCMS</li>
+                <li>Sketch</li>
+              </ul>
+            </div>
+            <ul className="works">
+              <li>Created websites from sketch/figma design.</li>
+              <li>Maintenanced websites for Discovery parks, Gday parks, Kakadu tourism, and more.</li>
+              <li>Created CraftCMS-based website template.</li>
+            </ul>
+          </dd>
+          <dt className="scroll-element eff-scroll slide-left">
+            <div className="eff">
               <h3 className="company">Freelancer</h3>
               {/*<div className="role">UI/UX Designer</div>*/}
               <div className="role">Frontend web developer</div>
               <div className="role">Graphic designer</div>
-              <div className="when">2017 - 2021</div>
+              <div className="when">2017 - 2023</div>
             </div>
           </dt>
           <dd className="scroll-element eff-scroll slide-right">
