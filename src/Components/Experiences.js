@@ -17,7 +17,7 @@ function Portfolios() {
               <div className="role">Frontend web developer</div>
               <div className="when">2023 - 2024</div>
             </div>
-          </dt>
+          </dt>q
           <dd className="scroll-element eff-scroll slide-right">
             <div className="description">
             Overall Front-end web development, UI/UX design, enhancement, and maintenance for diverse websites.
@@ -27,8 +27,8 @@ function Portfolios() {
                 <li>FRONT-END</li>
               </ul>
               <ul className="tags tools">
+                <li>JS</li> 
                 <li>HTML/CSS</li>
-                <li>JS</li>
                 <li>Twig</li>
                 <li>CraftCMS</li>
                 <li>Sketch</li>
@@ -59,8 +59,8 @@ function Portfolios() {
                 <li>GRAPHIC</li>
               </ul>
               <ul className="tags tools">
-                <li>HTML/CSS</li>
                 <li>JS</li>
+                <li>HTML/CSS</li>
                 <li>REACT</li>
                 <li>PHOTOSHOP</li>
                 <li>ILLUSTRATOR</li>
@@ -121,9 +121,9 @@ function Portfolios() {
                 <li>accessibility</li>
               </ul>
               <ul className="tags tools">
-                <li>Photoshop</li>
                 <li>html/css</li>
                 <li>js</li>
+                <li>Photoshop</li>
               </ul>
             </div>
             <ul className="works">
@@ -152,9 +152,9 @@ function Portfolios() {
                 <li>front-end</li>
               </ul>
               <ul className="tags tools">
-                <li>Photoshop</li>
                 <li>html/css</li>
                 <li>js</li>
+                <li>Photoshop</li>
               </ul>
             </div>
             <ul className="works">
