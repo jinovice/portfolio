@@ -17,7 +17,7 @@ function Portfolios() {
               <div className="role">Frontend web developer</div>
               <div className="when">2023 - 2024</div>
             </div>
-          </dt>q
+          </dt>
           <dd className="scroll-element eff-scroll slide-right">
             <div className="description">
             Overall Front-end web development, UI/UX design, enhancement, and maintenance for diverse websites.
