@@ -13,6 +13,34 @@ function Portfolios() {
         <dl>
           <dt className="scroll-element eff-scroll slide-left">
             <div className="eff">
+              <h3 className="company">Koreakimchi</h3>
+              <div className="role">Senior IT manager</div>
+              <div className="when">2024 - 2025</div>
+            </div>
+          </dt>
+          <dd className="scroll-element eff-scroll slide-right">
+            <div className="description">
+            Responsible for overall operations, marketing, and product planning related to the online store.
+            </div>
+            <div className="_group">
+              <ul className="tags roles dark">
+                <li>IT manager</li>
+              </ul>
+              <ul className="tags tools">
+                <li>Shopify</li>
+                <li>Google Ads</li> 
+                <li>Photoshop</li> 
+                <li>HTML/CSS</li>
+              </ul>
+            </div>
+            <ul className="works">
+              <li>Managed online store marketing strategies and campaigns.</li> 
+              <li>Planned and executed events and product initiatives.</li> 
+              <li>Oversaw the operations of the online platform.</li>
+            </ul>
+          </dd>
+          <dt className="scroll-element eff-scroll slide-left">
+            <div className="eff">
               <h3 className="company">Karmabunny</h3>
               <div className="role">Frontend web developer</div>
               <div className="when">2023 - 2024</div>

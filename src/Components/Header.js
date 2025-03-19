@@ -15,7 +15,7 @@ function Header({isSticky}) {
   return (
     <header className={ isSticky ? 'sticky' : '' }>
       <div className="headerContainer">
-        <h1><a href="/"><img src={process.env.PUBLIC_URL + '/images/jinovice.svg'} alt="" /> JINO </a><span>FRONT-END DEVELOPER</span></h1>
+        <h1><a href="/"><img src={process.env.PUBLIC_URL + '/images/jinovice.svg'} alt="" /> JINO </a><span>IT Manager</span></h1>
         <nav>
           <ul>
             <li><a href={process.env.PUBLIC_URL + '/data/JinyongChoi_resume.pdf'} className="resume" target="_blank" rel="noreferrer">RESUME</a></li>

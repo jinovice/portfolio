@@ -46,18 +46,18 @@ function About() {
             </div>
 
             <div className="graph scroll-element eff-scroll fade-in-bottom">
-              <h4>JAVASCRIPT</h4>
-              <div className="grade">ADVANCED</div>
+              <h4>SHOPIFY</h4>
+              <div className="grade">EXPERT</div>
               <div className="bar">
-                <div className="fill g85"></div>
+                <div className="fill g100"></div>
               </div>
             </div>
 
             <div className="graph scroll-element eff-scroll fade-in-bottom">
-              <h4>REACT</h4>
-              <div className="grade">INTERMEDIATE</div>
+              <h4>JAVASCRIPT</h4>
+              <div className="grade">ADVANCED</div>
               <div className="bar">
-                <div className="fill g65"></div>
+                <div className="fill g85"></div>
               </div>
             </div>
 
@@ -90,6 +90,14 @@ function About() {
               <div className="grade">EXPERT</div>
               <div className="bar">
                 <div className="fill g90"></div>
+              </div>
+            </div>
+
+            <div className="graph scroll-element eff-scroll fade-in-bottom">
+              <h4>REACT</h4>
+              <div className="grade">INTERMEDIATE</div>
+              <div className="bar">
+                <div className="fill g65"></div>
               </div>
             </div>
 

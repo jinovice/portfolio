@@ -444,6 +444,9 @@ ul.tags {
   &.Wordpress {
     background-image: url("../../public/images/icons/WordpressW.svg");
   }
+  &.Shopify {
+    background-image: url("../../public/images/icons/shopify.svg");
+  }
 }
 
 .colored>li>.badges, .portfolio:hover .badges {
