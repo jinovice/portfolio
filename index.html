@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jinovice — Australian online commerce company</title>
+<meta name="description" content="Jinovice is an Australian online commerce company, starting with beauty and skincare.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F5F5; --surface:#FFFFFF; --ink:#1E2A38; --muted:#5B6673;
+  --line:#DFE3E6; --euc:#5E8C7B; --euc-soft:#DCE9E3; --blush:#EBCFC6;
+  --sun:#F2C14E; --shelf:#C9A37A;
+  --display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
+  --body:"Figtree", "Helvetica Neue", Arial, sans-serif;
+  --wrap:1160px;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--euc);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;font-weight:700;letter-spacing:-0.01em}
+p{margin:0}
+
+/* Header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:24px;font-weight:700;text-decoration:none}
+.logo-mark{width:28px;height:28px;border-radius:8px 8px 14px 14px;background:var(--euc);position:relative}
+.logo-mark::after{content:"";position:absolute;left:7px;top:-6px;width:14px;height:10px;border:3px solid var(--euc);border-bottom:none;border-radius:8px 8px 0 0}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+.nav ul a:hover{color:var(--ink)}
+.nav-cta{text-decoration:none;font-weight:600;font-size:15px;border:1.5px solid var(--ink);padding:8px 18px;border-radius:999px}
+.nav-cta:hover{background:var(--ink);color:var(--bg)}
+@media (max-width:760px){.nav ul{display:none}}
+
+/* Hero */
+.hero{padding:72px 0 0;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:end}
+.hero h1{font-size:clamp(42px,6.4vw,78px);max-width:12ch}
+.hero p.lead{margin-top:22px;font-size:19px;color:var(--muted);max-width:46ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;padding-bottom:72px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font:600 16px var(--body);text-decoration:none;border:2px solid var(--ink)}
+.btn-primary{background:var(--ink);color:var(--bg)}
+.btn-ghost{background:transparent;color:var(--ink)}
+
+/* CSS shelf illustration */
+.shelf-scene{position:relative;height:420px}
+.wall{position:absolute;inset:0 0 34px;background:var(--euc-soft);border-radius:200px 200px 0 0}
+.sunspot{position:absolute;top:44px;right:56px;width:88px;height:88px;border-radius:50%;background:var(--sun);opacity:.85}
+.plank{position:absolute;left:-12px;right:-12px;bottom:20px;height:16px;background:var(--shelf);border-radius:4px}
+.items{position:absolute;left:0;right:0;bottom:36px;display:flex;justify-content:center;align-items:flex-end;gap:18px}
+.bottle{width:72px;height:170px;background:var(--surface);border-radius:20px 20px 14px 14px;position:relative;border:2px solid var(--ink)}
+.bottle::before{content:"";position:absolute;left:24px;top:-34px;width:20px;height:32px;background:var(--ink);border-radius:5px 5px 0 0}
+.bottle::after{content:"";position:absolute;left:12px;right:12px;top:56px;height:52px;background:var(--blush);border-radius:6px}
+.jar{width:96px;height:84px;background:var(--blush);border:2px solid var(--ink);border-radius:10px 10px 20px 20px;position:relative}
+.jar::before{content:"";position:absolute;left:-6px;right:-6px;top:-24px;height:24px;background:var(--euc);border:2px solid var(--ink);border-radius:8px}
+.tube{width:46px;height:200px;background:var(--surface);border:2px solid var(--ink);border-radius:4px 4px 22px 22px;position:relative}
+.tube::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 6px)}
+.tube::after{content:"";position:absolute;left:10px;right:10px;bottom:30px;height:90px;background:var(--euc);border-radius:4px}
+.parcel{width:120px;height:96px;background:var(--shelf);border:2px solid var(--ink);border-radius:6px;position:relative}
+.parcel::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:18px;transform:translateX(-50%);background:var(--sun);opacity:.9}
+.parcel::after{content:"";position:absolute;left:14px;bottom:14px;width:40px;height:26px;background:var(--surface);border-radius:3px}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .actions{padding-bottom:16px}
+  .shelf-scene{height:340px}
+  .items{transform:scale(.82);transform-origin:bottom center}
+}
+
+section.block{padding:96px 0}
+.section-head{margin-bottom:44px;max-width:640px}
+.section-head h2{font-size:clamp(32px,4.4vw,48px)}
+.section-head p{color:var(--muted);margin-top:14px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.about-grid .body p+p{margin-top:16px}
+.about-grid .body p{color:var(--muted)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.fact strong{display:block;font-family:var(--display);font-size:20px}
+.fact span{color:var(--muted);font-size:15px}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:24px}}
+
+/* What we do */
+.what{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service{padding:32px 28px;border-radius:20px;background:var(--bg)}
+.service h3{font-size:23px;margin-top:24px}
+.service p{color:var(--muted);margin-top:8px}
+.ico{width:60px;height:60px;border-radius:16px;background:var(--euc-soft);position:relative}
+.ico-cart::before{content:"";position:absolute;left:14px;top:18px;width:30px;height:18px;border:3px solid var(--ink);border-top:none;border-radius:0 0 6px 6px}
+.ico-cart::after{content:"";position:absolute;left:18px;top:40px;width:7px;height:7px;border-radius:50%;background:var(--ink);box-shadow:16px 0 0 var(--ink)}
+.ico-source::before{content:"";position:absolute;left:16px;top:14px;width:22px;height:22px;border:3px solid var(--ink);border-radius:50%}
+.ico-source::after{content:"";position:absolute;left:35px;top:36px;width:12px;height:4px;background:var(--ink);transform:rotate(45deg);border-radius:2px}
+.ico-box::before{content:"";position:absolute;left:14px;top:18px;width:32px;height:26px;background:var(--shelf);border:2px solid var(--ink);border-radius:3px}
+.ico-box::after{content:"";position:absolute;left:27px;top:18px;width:6px;height:26px;background:var(--sun)}
+@media (max-width:860px){.services{grid-template-columns:1fr}}
+
+/* Focus */
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stage{border-radius:20px;height:220px;display:grid;place-items:end center;padding-bottom:32px}
+.s1{background:var(--euc-soft)} .s2{background:var(--blush)} .s3{background:var(--surface);border:1.5px dashed var(--line)}
+.focus h3{font-size:21px;margin-top:16px}
+.focus p{color:var(--muted);font-size:16px;margin-top:4px}
+.mini{transform:scale(.8);transform-origin:bottom center}
+.dots{display:flex;gap:10px;margin-bottom:60px}
+.dots span{width:16px;height:16px;border-radius:50%;background:var(--line)}
+@media (max-width:860px){.focus{grid-template-columns:1fr}}
+
+/* Values */
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;list-style:none;margin:0;padding:0}
+.values li{border-top:2px solid var(--ink);padding-top:20px}
+.values h3{font-size:22px}
+.values p{color:var(--muted);margin-top:8px}
+@media (max-width:760px){.values{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{background:var(--euc);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.contact h2{font-size:clamp(30px,4vw,46px)}
+.contact p{margin-top:12px;opacity:.92}
+.contact dl{margin:0;display:grid;gap:14px;background:var(--surface);color:var(--ink);border-radius:20px;padding:28px}
+.contact dt{font-size:14px;color:var(--muted)}
+.contact dd{margin:0;font-weight:600;font-size:18px}
+.contact dd a{text-decoration:none}
+.contact dd a:hover{text-decoration:underline}
+@media (max-width:760px){.contact{grid-template-columns:1fr;padding:36px 24px}}
+
+/* Footer */
+footer{padding:48px 0 40px;margin-top:96px;border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+.foot ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.foot ul a{text-decoration:none;color:var(--muted)}
+.foot ul a:hover{color:var(--ink)}
+.legal{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Jinovice home"><span class="logo-mark" aria-hidden="true"></span>Jinovice</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#what">What we do</a></li>
+        <li><a href="#values">Our values</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="#contact">Contact us</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Bringing good products to Australian homes.</h1>
+        <p class="lead">Jinovice is an Australian online commerce company. We source quality products from trusted brands and deliver them to customers across the country, starting with beauty and skincare.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#about">Learn about us</a>
+        </div>
+      </div>
+      <div class="shelf-scene" aria-hidden="true">
+        <div class="wall"></div>
+        <div class="sunspot"></div>
+        <div class="items">
+          <div class="bottle"></div>
+          <div class="tube"></div>
+          <div class="jar"></div>
+          <div class="parcel"></div>
+        </div>
+        <div class="plank"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2 style="font-size:clamp(32px,4.4vw,48px)">About Jinovice</h2>
+      </div>
+      <div class="body">
+        <p>We started Jinovice with a simple idea: shopping online should feel as trustworthy as buying from a store you know. That means genuine products, honest information and service that doesn’t disappear after checkout.</p>
+        <p>Our first focus is beauty and skincare, a category where quality and authenticity matter most. As we grow, we’ll bring the same care to new product ranges for everyday living.</p>
+        <div class="facts">
+          <div class="fact"><strong>Australian based</strong><span>Registered and operating in Australia</span></div>
+          <div class="fact"><strong>Online first</strong><span>Selling direct to customers Australia-wide</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block what" id="what">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we do</h2>
+        <p>We handle the full journey of a product, from finding it to putting it in a customer’s hands.</p>
+      </div>
+      <div class="services">
+        <div class="service"><div class="ico ico-source" aria-hidden="true"></div><h3>Product sourcing</h3><p>We work directly with brands and authorised distributors to find products worth recommending.</p></div>
+        <div class="service"><div class="ico ico-cart" aria-hidden="true"></div><h3>Online retail</h3><p>We sell through our own channels and leading online marketplaces, with clear and accurate product information.</p></div>
+        <div class="service"><div class="ico ico-box" aria-hidden="true"></div><h3>Fulfilment and care</h3><p>We pack, ship and support every order, and we stay available when customers need help.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Where we’re starting</h2>
+        <p>We’re building our range step by step, beginning with the categories we know best.</p>
+      </div>
+      <div class="focus">
+        <div><div class="stage s1"><div class="mini"><div class="bottle"></div></div></div><h3>Skincare</h3><p>Cleansers, toners, serums and moisturisers.</p></div>
+        <div><div class="stage s2"><div class="jar"></div></div><h3>Beauty</h3><p>Makeup and beauty essentials for everyday use.</p></div>
+        <div><div class="stage s3"><div class="dots" aria-hidden="true"><span></span><span></span><span></span></div></div><h3>More to come</h3><p>New ranges for home and lifestyle as we grow.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="values" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we stand for</h2>
+      </div>
+      <ul class="values">
+        <li><h3>Genuine products</h3><p>Everything we sell comes from the brand or an authorised supplier. No exceptions.</p></li>
+        <li><h3>Honest information</h3><p>We describe products clearly and accurately, so customers can choose with confidence.</p></li>
+        <li><h3>Lasting relationships</h3><p>We aim to earn repeat customers and long-term brand partners, not one-off sales.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap" id="contact">
+    <div class="contact">
+      <div>
+        <h2>Let’s talk</h2>
+        <p>Brands, suppliers and partners are welcome to contact us about working together. We usually reply within two business days.</p>
+      </div>
+      <dl>
+        <div><dt>Email</dt><dd><a href="mailto:jinovice@gmail.com">jinovice@gmail.com</a></dd></div>
+        <div><dt>Location</dt><dd>Melbourne, VIC, Australia</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span>Jinovice</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#what">What we do</a></li>
+        <li><a href="#values">Our values</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>© 2026 Jinovice Pty Ltd. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
